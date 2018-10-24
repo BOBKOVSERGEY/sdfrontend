@@ -1,0 +1,23 @@
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+body {
+  font-family: $fontOneRegular;
+  font-size: $default-font-size;
+  color: $color-dark;
+  background-color: $color-bg;
+}
+
+ul {
+  margin-bottom: 0;
+}
+ol, ul {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
