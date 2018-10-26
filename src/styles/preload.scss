@@ -16,7 +16,7 @@
   align-items: center;
   padding: 20px;
   z-index: 9999999;
-  background: #fff;
+  background: $color-bg;
   transition: .3s all ease;
 }
 
@@ -43,8 +43,16 @@
 
 .preloader-container svg {
   position: absolute;
-  fill: $color-primary;
   transform-origin: 50% 50%;
+  &:nth-child(1) {
+    fill: $color-primary;
+  }
+  &:nth-child(2) {
+    fill: $color-secondary;
+  }
+  &:nth-child(3) {
+    fill: $color-primary;
+  }
 }
 
 .item1 {
