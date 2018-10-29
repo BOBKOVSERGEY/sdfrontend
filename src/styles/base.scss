@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: $fontOneRegular;
+  font-family: $fontTwoBook;
   font-size: $default-font-size;
   color: $color-dark;
   background-color: $color-bg;
@@ -26,5 +26,11 @@ button {
   &:active,
   &:focus {
     outline: none;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .hidden-phone {
+    display: none;
   }
 }

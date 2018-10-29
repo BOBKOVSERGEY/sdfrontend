@@ -38,12 +38,12 @@
             <!-- RD Navbar Toggle-->
             <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-NaN"><span></span></button>
             <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
-                                    <img src="dist/images/logo.svg" alt="ЭСДИ" height="43">
+                                    <img src="dist/images/logo.svg" alt="ЭСДИ" class="header__logo-img"> <span class="header__logo">Sites Development</span><span class="header__logo--phone">ЭсДи</span>
                                    </a>
             <div class="rd-navbar-block">
               <ul class="list-inline-bordered">
                 <li>
-                  <button class="rd-navbar-popup-toggle" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil"></span><span class="header__button-call hidden-info"> Начать проект</span></button>
+                  <button class="rd-navbar-popup-toggle" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil"></span><span class="header__button-call hidden-phone"> Начать проект</span></button>
                   <div class="rd-navbar-popup" id="rd-navbar-login-NaN">
                     <h4>Book now</h4>
                     <form class="rd-form rd-form-small">
@@ -65,7 +65,7 @@
                     </form>
                   </div>
                 </li>
-                <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android"></span><span class="header__phone"> +7 (495) 664 38 15</span></a></li>
+                <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android"></span><span class="header__phone hidden-phone"> +7 (495) 664 38 15</span></a></li>
               </ul>
               <button class="rd-navbar-search-toggle" data-rd-navbar-toggle="#rd-navbar-search-NaN"><span></span></button>
             </div>
@@ -74,9 +74,7 @@
           <div class="rd-navbar-search" id="rd-navbar-search-NaN">
             <form class="rd-search" action="#" data-search-live="rd-search-results-live-NaN" method="post">
               <div class="form-wrap">
-                <label class="form-label" for="rd-navbar-search-form-input-NaN">Search...</label>
-                <input class="form-input rd-navbar-search-form-input" id="rd-navbar-search-form-input-NaN" type="text" name="s" autocomplete="off">
-                <div class="rd-search-results-live" id="rd-search-results-live-NaN"></div>
+                <input class="form-input rd-navbar-search-form-input" id="rd-navbar-search-form-input-NaN" type="text" name="s" placeholder="Введите ваш запрос" autocomplete="off">
               </div>
               <button class="rd-search-form-submit fa-search" type="submit"></button>
             </form>
@@ -87,17 +85,17 @@
           </a>
             <!-- RD Navbar Nav-->
             <ul class="rd-navbar-nav">
-              <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a>
+              <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Главная</a>
               </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">About Us</a>
+              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Студия</a>
               </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Cruises</a>
+              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Разработка</a>
                 <!-- RD Navbar Dropdown-->
                 <ul class="rd-menu rd-navbar-dropdown">
                   <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Cruise</a></li>
                 </ul>
               </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Blog</a>
+              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Продвижение</a>
                 <!-- RD Navbar Dropdown-->
                 <ul class="rd-menu rd-navbar-dropdown">
                   <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Grid Blog</a></li>
@@ -105,8 +103,7 @@
                   <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Blog Post</a></li>
                 </ul>
               </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                <!-- RD Navbar Megamenu-->
+              <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
                 <ul class="rd-menu rd-navbar-megamenu">
                   <li class="rd-megamenu-item">
                     <ul class="rd-megamenu-list">
@@ -142,8 +139,8 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Contacts</a>
+              </li>-->
+              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Контакты</a>
               </li>
             </ul>
           </div>

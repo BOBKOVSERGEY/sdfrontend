@@ -1,9 +1,42 @@
 .header {
+  &__button-call-icon {
+    display: none;
+  }
   &__button-call {
+    font-family: $fontTwoBold;
     font-size: 15px;
     text-transform: uppercase;
+    margin-left: 5px;
   }
   &__phone {
+    font-family: $fontTwoBold;
     font-size: 16px;
+    margin-left: 5px;
+  }
+  &__logo {
+    font-family: $fontTwoExtraBold;
+    color: $color-dark;
+    &--phone {
+      display: none;
+      font-family: $fontTwoExtraBold;
+      color: $color-dark;
+    }
+  }
+  &__logo-img {
+    height: 43px;
+    margin-right: .6rem;
+    flex: 1 1 auto;
   }
 }
+
+@media only screen and (max-width : 768px) {
+  .header {
+    &__logo {
+      display: none;
+      &--phone {
+        display: inline-block;
+      }
+    }
+  }
+}
+
