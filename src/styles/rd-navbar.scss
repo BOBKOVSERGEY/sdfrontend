@@ -476,7 +476,7 @@
 .rd-navbar-static .rd-navbar-dropdown li > a::before,
 .rd-navbar-static .rd-megamenu-list li > a::before {
   position: relative;
-  top: -1px;
+  top: 1px;
   left: -6px;
   display: inline-block;
   content: '\f238';
@@ -1813,6 +1813,8 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-thin.rd-navbar-static .list-inline-bordered {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

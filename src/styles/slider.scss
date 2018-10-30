@@ -1,0 +1,20 @@
+.slider {
+  overflow: hidden;
+  &__overlay {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to left bottom, rgba($color-secondary, 0.3), rgba($color-secondary, 0.1));
+      z-index: 1;
+    }
+    & .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
