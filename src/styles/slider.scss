@@ -1,5 +1,15 @@
 .slider {
   overflow: hidden;
+  &__heading {
+    font-family: $fontTwoBold;
+    font-size: 72px;
+    color: rgba($color-white, .75);
+  }
+  &__description {
+    font-family: $fontTwoMedium;
+    font-size: 32px;
+    color: $color-white;
+  }
   &__overlay {
     position: relative;
     &:before {
@@ -9,12 +19,12 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(to left bottom, rgba($color-secondary, 0.3), rgba($color-secondary, 0.1));
+      background-image: linear-gradient(to left bottom, rgba($color-secondary, 0.3), rgba($color-primary, 0.1));
       z-index: 1;
     }
     & .container {
       position: relative;
-      z-index: 2;
+      z-index: 3;
     }
   }
 }
