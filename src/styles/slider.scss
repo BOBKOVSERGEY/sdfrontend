@@ -3,7 +3,7 @@
   &__heading {
     font-family: $fontTwoBold;
     font-size: 72px;
-    color: rgba($color-white, .75);
+    color: rgba($color-white, 1);
   }
   &__description {
     font-family: $fontTwoMedium;
@@ -19,7 +19,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(to left bottom, rgba($color-secondary, 0.3), rgba($color-primary, 0.1));
+      background-image: linear-gradient(to left bottom, rgba($color-primary, 0.7), rgba($color-secondary, 0.3));
       z-index: 1;
     }
     & .container {
