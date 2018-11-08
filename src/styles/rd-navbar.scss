@@ -1611,7 +1611,7 @@ html.rd-navbar-fixed-linked .page {
 *
 */
 .rd-navbar-thin.rd-navbar-static {
-  background-color: $color-secondary;
+  background-color: rgba($color-white, .0);
   border-bottom: 1px solid transparent;
 }
 
