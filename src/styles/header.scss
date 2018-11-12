@@ -1,14 +1,14 @@
 .header {
-  position: relative;
+  /*position: relative;
   z-index: 2;
   margin: 0;
-  padding: 0;
-  & .rd-navbar-wrap {
+  padding: 0;*/
+  /*& .rd-navbar-wrap {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-  }
+  }*/
   &__button-call-icon {
     display: none;
   }
@@ -17,6 +17,7 @@
     font-size: 16px;
     text-transform: uppercase;
     margin-left: 5px;
+    letter-spacing: 1px;
   }
   &__phone {
     font-family: $fontTwoBold;
@@ -24,12 +25,12 @@
     margin-left: 5px;
   }
   &__logo {
-    font-family: $fontTwoExtraBold;
-    color: $color-dark;
+    font-family: $fontTwoBold;
+    color: $color-white;
     &--phone {
       display: none;
       font-family: $fontTwoExtraBold;
-      color: $color-dark;
+      color: $color-white;
     }
   }
   &__logo-img {
