@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-<div class="page-loader">
+<!--<div class="page-loader">
   <div>
     <div class="page-loader-body">
       <div class="preloader-container">
@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 <header class="header">
   <!-- RD Navbar-->
   <div class="rd-navbar-wrap">
@@ -142,10 +142,10 @@
 </header>
 <section class="slider">
   <div class="swiper-container swiper-slider context-dark swiper-slider_fullheight" data-effect="coverflow"
-       data-loop="false" data-direction="horizontal" data-speed="1600" data-autoplay="8000" data-mousewheel="false"
+       data-loop="false" data-direction="horizontal" data-speed="1600"  data-mousewheel="false"
        data-keyboard="true">
     <div class="swiper-wrapper">
-      <!--<div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/Pre-launch"
+      <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/Pre-launch"
            data-vide-options="posterType: jpg">
         <div class="swiper-slide-caption text-center">
           <div class="container">
@@ -154,16 +154,53 @@
                 <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
                 <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="200">
                   Разработка сайтов любой сложности от landing-page до крупных интернет-магазинов с нестандартным функционалом</h5>
-                <div class="group-lg group-middle"><a class="button button-black button-shadow"
+                <div class="slider__wrapper-form">
+                  <form action="#" class="form" method="post">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form__group">
+                          <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form__group">
+                          <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form__group">
+                          <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-9">
+                        <div class="form__group">
+                          <div class="form__checkbox--center">
+                            <input id="checkbox-development" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-development">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form__group">
+                          <input class="form__btn" type="submit" name="development" value="Заказать сайт">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--<div class="group-lg group-middle"><a class=""
                                                       data-caption-animate="fadeInUpSmall" data-caption-delay="350"
                                                       href="#features" data-custom-scroll-to="features">See
                   Features</a><a class="button button-primary button-shadow" data-caption-animate="fadeInUpSmall"
-                                 data-caption-delay="350" href="#">Заказать сайт</a></div>
+                                 data-caption-delay="350" href="#">Заказать сайт</a></div>-->
               </div>
             </div>
           </div>
         </div>
-      </div>-->
+      </div>
       <div class="swiper-slide slider__overlay context-dark" style="background-image: url(dist/images/slider-one.jpg)">
         <div class="swiper-slide-caption text-center">
           <div class="container">

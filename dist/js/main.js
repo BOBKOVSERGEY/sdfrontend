@@ -104,12 +104,12 @@
     }
 
     //Page loader
-    if (plugins.pageLoader.length && !isNoviBuilder) {
+    /*if (plugins.pageLoader.length && !isNoviBuilder) {
         var loader = setTimeout(function () {
           plugins.pageLoader.addClass("loaded");
           $window.trigger("resize");
         }, 200);
-    }
+    }*/
 
     // Multitoggles
     if(plugins.multitoggle.length) {
