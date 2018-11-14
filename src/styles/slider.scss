@@ -37,4 +37,47 @@
   &__wrapper-form {
     margin-top: 30px;
   }
+  &__button {
+    display: none;
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .slider {
+    &__heading {
+      font-size: 52px;
+    }
+    &__description {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .slider {
+    &__wrapper-form {
+      display: none;
+    }
+    &__button {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .slider {
+    &__heading {
+      font-size: 32px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .slider {
+    &__heading {
+      font-size: 24px;
+    }
+  }
 }

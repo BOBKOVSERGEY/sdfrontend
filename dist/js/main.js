@@ -22,6 +22,7 @@
       pageLoader: $(".page-loader"),
       swiper: document.querySelectorAll( '.swiper-container' ),
       vide: $(".vide_bg"),
+      buttonWinona: $('.button-winona'),
     };
   $window.on('load', function () {
     // RD Navbar
@@ -110,6 +111,23 @@
           $window.trigger("resize");
         }, 200);
     }*/
+
+    // Winona buttons
+    if (plugins.buttonWinona.length && !isNoviBuilder && !isIE) {
+      initWinonaButtons(plugins.buttonWinona);
+    }
+
+    function initWinonaButtons(buttons) {
+      for (var i = 0; i < buttons.length; i++) {
+        var $button = $(buttons[i]),
+          innerContent = $button.html();
+
+        $button.html('');
+        $button.append(
+          '<div class="content-original">' + innerContent + '</div>'
+          + '<div class="content-dubbed">' + innerContent + '</div>');
+      }
+    }
 
     // Multitoggles
     if(plugins.multitoggle.length) {

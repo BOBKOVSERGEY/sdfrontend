@@ -8,12 +8,111 @@
     border-radius: 60px;
     color: $color-white;
   }
+  &--big {
+    font-family: $fontTwoBold;
+    background: $color-secondary;
+    padding: 13px 30px;
+    border-radius: 60px;
+    color: $color-white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    transition: all .2s;
+    &:hover {
+      background: $color-primary;
+    }
+    &:focus {
+      transform: translate(0,3px);
+    }
+  }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 480px) {
+  .btn {
+    &--big {
+      min-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
   .btn {
     &--top {
       padding: 8px 15px;
     }
+  }
+}
+
+/**
+* Button effects
+*/
+.button-winona {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  white-space: nowrap;
+}
+
+.button-winona .content-original,
+.button-winona .content-dubbed {
+  vertical-align: middle;
+  transition: transform .4s, clip-path .4s;
+}
+
+.button-winona .content-original {
+  display: block;
+  clip-path: polygon(0 100%, -35% 0, 0 0, 0 100%);
+}
+
+.button-winona .content-dubbed {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  filter: blur(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  padding: inherit;
+  clip-path: polygon(100% 100%, 100% 0, -35% 0, 0 100%);
+  white-space: nowrap;
+}
+
+.button-winona:hover .content-original {
+  animation: showum 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.button-winona:hover .content-dubbed {
+  animation: hideum 0.3s;
+  animation-fill-mode: forwards;
+}
+
+html body .button-winona {
+  display: inline-flex;
+}
+
+@keyframes showum {
+  0% {
+    clip-path: polygon(0 100%, -35% 0, 0 0, 0 100%);
+  }
+  100% {
+    clip-path: polygon(135% 100%, 100% 0, 0 0, 0 100%);
+  }
+}
+
+@keyframes hideum {
+  0% {
+    clip-path: polygon(100% 100%, 100% 0, -35% 0, 0 100%);
+  }
+  100% {
+    clip-path: polygon(100% 100%, 100% 0, 100% 0, 135% 100%);
   }
 }
