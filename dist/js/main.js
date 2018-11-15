@@ -25,6 +25,26 @@
       buttonWinona: $('.button-winona'),
     };
   $window.on('load', function () {
+
+
+    //Page loader
+    /*if (plugins.pageLoader.length && !isNoviBuilder) {
+        var loader = setTimeout(function () {
+          plugins.pageLoader.addClass("loaded");
+          $window.trigger("resize");
+        }, 200);
+    }*/
+
+    // Multitoggles
+    if(plugins.multitoggle.length) {
+      multitoggles();
+    }
+
+  });
+
+  $(function () {
+    isNoviBuilder = window.xMode;
+
     // RD Navbar
     if (plugins.rdNavbar.length) {
       var aliaces, i, j, len, value, values, responsiveNavbar;
@@ -104,14 +124,6 @@
       }
     }
 
-    //Page loader
-    /*if (plugins.pageLoader.length && !isNoviBuilder) {
-        var loader = setTimeout(function () {
-          plugins.pageLoader.addClass("loaded");
-          $window.trigger("resize");
-        }, 200);
-    }*/
-
     // Winona buttons
     if (plugins.buttonWinona.length && !isNoviBuilder && !isIE) {
       initWinonaButtons(plugins.buttonWinona);
@@ -129,15 +141,14 @@
       }
     }
 
-    // Multitoggles
-    if(plugins.multitoggle.length) {
-      multitoggles();
+    // UI To Top
+    if (isDesktop && !isNoviBuilder) {
+      $().UItoTop({
+        easingType: 'easeOutQuad',
+        containerClass: 'ui-to-top mdi mdi-chevron-up'
+      });
     }
 
-  });
-
-  $(function () {
-    isNoviBuilder = window.xMode;
 
     /**
      * isScrolledIntoView
