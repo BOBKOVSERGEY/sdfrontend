@@ -29,6 +29,16 @@ button {
   }
 }
 
+* + p {
+  margin-top: 28px;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh !important;
+}
+
 @media only screen and (max-width : 768px) {
   .hidden-phone {
     display: none;

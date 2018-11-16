@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-<!--<div class="page-loader">
+<div class="page">
+  <!--<div class="page-loader">
   <div>
     <div class="page-loader-body">
       <div class="preloader-container">
@@ -27,298 +28,325 @@
     </div>
   </div>
 </div>-->
-<header class="header">
-  <!-- RD Navbar-->
-  <div class="rd-navbar-wrap">
-    <nav class="rd-navbar rd-navbar-thin" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="0" data-xl-stick-up-offset="0" data-xxl-stick-up-offset="0" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-      <div class="rd-navbar-main-outer">
-        <div class="rd-navbar-main">
-          <!-- RD Navbar Panel-->
-          <div class="rd-navbar-panel">
-            <!-- RD Navbar Toggle-->
-            <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-NaN"><span></span></button>
-            <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
-                                    <img src="dist/images/logo.svg" alt="ЭСДИ" class="header__logo-img"> <span class="header__logo">SitesDevelopment</span><span class="header__logo--phone">ЭСДИ</span>
-                                   </a>
-            <div class="rd-navbar-block">
-              <ul class="list-inline-bordered">
-                <li>
-                  <button class="rd-navbar-popup-toggle btn btn--top" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil"></span><span class="header__button-call hidden-phone"> Начать проект</span></button>
-                  <div class="rd-navbar-popup" id="rd-navbar-login-NaN">
-                    <h4>Book now</h4>
-                    <form class="rd-form rd-form-small">
-                      <div class="form-wrap">
-                        <input class="form-input" id="register-name-1NaN" type="text" name="username" data-constraints="@Required">
-                        <label class="form-label" for="register-name-1NaN">Check in</label>
+  <header class="header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+      <nav class="rd-navbar rd-navbar-thin" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="0" data-xl-stick-up-offset="0" data-xxl-stick-up-offset="0" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-NaN"><span></span></button>
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
+              <img src="dist/images/logo.svg" alt="ЭСДИ" class="header__logo-img"> <span class="header__logo">SitesDevelopment</span><span class="header__logo--phone">ЭСДИ</span>
+            </a>
+              <div class="rd-navbar-block">
+                <ul class="list-inline-bordered">
+                  <li>
+                    <button class="rd-navbar-popup-toggle btn btn--top" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil"></span><span class="header__button-call hidden-phone"> Начать проект</span></button>
+                    <div class="rd-navbar-popup" id="rd-navbar-login-NaN">
+                      <h4>Book now</h4>
+                      <form class="rd-form rd-form-small">
+                        <div class="form-wrap">
+                          <input class="form-input" id="register-name-1NaN" type="text" name="username" data-constraints="@Required">
+                          <label class="form-label" for="register-name-1NaN">Check in</label>
+                        </div>
+                        <div class="form-wrap">
+                          <input class="form-input" id="register-name-2NaN" type="text" name="username" data-constraints="@Required">
+                          <label class="form-label" for="register-name-2NaN">Check out</label>
+                        </div>
+                        <div class="form-wrap">
+                          <input class="form-input" id="register-name-3NaN" type="text" name="username" data-constraints="@Required">
+                          <label class="form-label" for="register-name-3NaN">Guests</label>
+                        </div>
+                        <div class="form-wrap">
+                          <button class="button button-block button-primary button-winona" type="submit">Book Now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android"></span><span class="header__phone hidden-phone"> +7 (495) 664 38 15</span></a></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-NaN">
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
+              <img src="dist/images/logo.svg" height="43" alt="ЭСДИ">
+            </a>
+              <!-- RD Navbar Nav-->
+              <ul class="rd-navbar-nav">
+                <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Главная</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Студия</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Разработка</a>
+                  <!-- RD Navbar Dropdown-->
+                  <ul class="rd-menu rd-navbar-dropdown">
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Cruise</a></li>
+                  </ul>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Продвижение</a>
+                  <!-- RD Navbar Dropdown-->
+                  <ul class="rd-menu rd-navbar-dropdown">
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Grid Blog</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Sidebar Blog</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Blog Post</a></li>
+                  </ul>
+                </li>
+                <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
+                  <ul class="rd-menu rd-navbar-megamenu">
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Buttons</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Progress bars</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Tabs</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Accordions</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Testimonials</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Typography</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Forms</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">404 Page</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">503 Page</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Coming Soon</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Under Construction</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Gallery</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Grid Gallery</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Modern Gallery</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Careers</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Search results</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Features</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Single Job</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Privacy policy</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Team</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Pricing</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>-->
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="slider">
+    <div class="swiper-container swiper-slider context-dark swiper-slider_fullheight" data-effect="coverflow"
+         data-loop="false" data-direction="horizontal" data-speed="1600"  data-mousewheel="false"
+         data-keyboard="true">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/The-Launch-2"
+             data-vide-options="posterType: jpg">
+          <div class="swiper-slide-caption text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12 col-sm-12">
+                  <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
+                  <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
+                    Разработка сайтов любой сложности от landing-page до крупных интернет-магазинов с нестандартным функционалом</h5>
+                  <div class="slider__wrapper-form">
+                    <form action="#" class="form" method="post">
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-wrap">
-                        <input class="form-input" id="register-name-2NaN" type="text" name="username" data-constraints="@Required">
-                        <label class="form-label" for="register-name-2NaN">Check out</label>
+                      <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                        <div class="col-md-9">
+                          <div class="form__group">
+                            <div class="form__checkbox--center">
+                              <input id="checkbox-development" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-development">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-wrap">
-                        <input class="form-input" id="register-name-3NaN" type="text" name="username" data-constraints="@Required">
-                        <label class="form-label" for="register-name-3NaN">Guests</label>
-                      </div>
-                      <div class="form-wrap">
-                        <button class="button button-block button-primary button-winona" type="submit">Book Now</button>
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
+                        <div class="col-md-12">
+                          <div class="form__group">
+                            <button class="form__btn btn btn--big button-winona" type="submit" name="development">Заказать сайт</button>
+                          </div>
+                        </div>
                       </div>
                     </form>
                   </div>
-                </li>
-                <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android"></span><span class="header__phone hidden-phone"> +7 (495) 664 38 15</span></a></li>
-              </ul>
+                  <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                    <a href="#" class="btn btn--big button-winona">Заказать сайт</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__overlay context-dark" style="background-image: url(dist/images/slider-seo.jpg)">
+          <div class="swiper-slide-caption text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12 col-sm-12">
+                  <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
+                  <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
+                    Сделаем комплекс мер по внутренней и внешней оптимизации для поднятия позиций сайта в результатах выдачи поисковых систем.</h5>
+                  <div class="slider__wrapper-form">
+                    <form action="#" class="form" method="post">
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                        <div class="col-md-9">
+                          <div class="form__group">
+                            <div class="form__checkbox--center">
+                              <input id="checkbox-promotion" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-promotion">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
+                        <div class="col-md-12">
+                          <div class="form__group">
+                            <button class="form__btn btn btn--big button-winona" type="submit" name="promotion">Продвинуть сайт</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                    <a href="#" class="btn btn--big button-winona">Продвинуть сайт</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__overlay context-dark" style="background-image: url(dist/images/slider-reputation.jpg)">
+          <div class="swiper-slide-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12 col-sm-12">
+                  <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
+                  <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
+                    Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда в поисковой выдаче.</h5>
+                  <div class="slider__wrapper-form">
+                    <form action="#" class="form" method="post">
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form__group">
+                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                        <div class="col-md-9">
+                          <div class="form__group">
+                            <div class="form__checkbox--center">
+                              <input id="checkbox-reputation" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-reputation">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
+                        <div class="col-md-12">
+                          <div class="form__group">
+                            <button class="form__btn btn btn--big button-winona" type="submit" name="reputation">Продвинуть сайт</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
+                    <a href="#" class="btn btn--big button-winona">Продвинуть сайт</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev linear-icon-chevron-left"></div>
+      <div class="swiper-button-next linear-icon-chevron-right"></div>
+    </div>
+  </section>
+  <section class="circle-element">
+    <div class="circle-element__wrapper">
+    </div>
+  </section>
+  <section class="circle-element__after">
+  </section>
+  <section class="about" data-content="About">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="about__heading">О нас</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius laudantium nisi non quae quibusdam rerum vel voluptatibus! Autem dicta enim fuga illo in maiores necessitatibus officia omnis sint tempora.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius laudantium nisi non quae quibusdam rerum vel voluptatibus! Autem dicta enim fuga illo in maiores necessitatibus officia omnis sint tempora.</p>
 
-            </div>
-          </div>
-          <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-NaN">
-            <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
-            <img src="dist/images/logo.svg" height="43" alt="ЭСДИ">
-          </a>
-            <!-- RD Navbar Nav-->
-            <ul class="rd-navbar-nav">
-              <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Главная</a>
-              </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Студия</a>
-              </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Разработка</a>
-                <!-- RD Navbar Dropdown-->
-                <ul class="rd-menu rd-navbar-dropdown">
-                  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Cruise</a></li>
-                </ul>
-              </li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Продвижение</a>
-                <!-- RD Navbar Dropdown-->
-                <ul class="rd-menu rd-navbar-dropdown">
-                  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Grid Blog</a></li>
-                  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Sidebar Blog</a></li>
-                  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Single Blog Post</a></li>
-                </ul>
-              </li>
-              <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                <ul class="rd-menu rd-navbar-megamenu">
-                  <li class="rd-megamenu-item">
-                    <ul class="rd-megamenu-list">
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Buttons</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Progress bars</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Tabs</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Accordions</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Testimonials</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Typography</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Forms</a></li>
-                    </ul>
-                  </li>
-                  <li class="rd-megamenu-item">
-                    <ul class="rd-megamenu-list">
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">404 Page</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">503 Page</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Coming Soon</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Under Construction</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Gallery</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Grid Gallery</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Modern Gallery</a></li>
-                    </ul>
-                  </li>
-                  <li class="rd-megamenu-item">
-                    <ul class="rd-megamenu-list">
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Careers</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Search results</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Features</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Single Job</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Privacy policy</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Team</a></li>
-                      <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Pricing</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>-->
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col-md-3">
+          <span class="icon linear-icon-cog"></span><br>
+          Разработаем современный сайт
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
-<section class="slider">
-  <div class="swiper-container swiper-slider context-dark swiper-slider_fullheight" data-effect="coverflow"
-       data-loop="false" data-direction="horizontal" data-speed="1600"  data-mousewheel="false"
-       data-keyboard="true">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/The-Launch-2"
-           data-vide-options="posterType: jpg">
-        <div class="swiper-slide-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-md-12 col-sm-12">
-                <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
-                <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                  Разработка сайтов любой сложности от landing-page до крупных интернет-магазинов с нестандартным функционалом</h5>
-                <div class="slider__wrapper-form">
-                  <form action="#" class="form" method="post">
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                      <div class="col-md-9">
-                        <div class="form__group">
-                          <div class="form__checkbox--center">
-                            <input id="checkbox-development" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-development">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
-                      <div class="col-md-12">
-                        <div class="form__group">
-                          <button class="form__btn btn btn--big button-winona" type="submit" name="development">Заказать сайт</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                  <a href="#" class="btn btn--big button-winona">Заказать сайт</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <span class="icon linear-icon-magnifier"></span><br>
+          Найдем новых клиентов на рынке
         </div>
-      </div>
-      <div class="swiper-slide slider__overlay context-dark" style="background-image: url(dist/images/slider-seo.jpg)">
-        <div class="swiper-slide-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-md-12 col-sm-12">
-                <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
-                <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                  Сделаем комплекс мер по внутренней и внешней оптимизации для поднятия позиций сайта в результатах выдачи поисковых систем.</h5>
-                <div class="slider__wrapper-form">
-                  <form action="#" class="form" method="post">
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                      <div class="col-md-9">
-                        <div class="form__group">
-                          <div class="form__checkbox--center">
-                            <input id="checkbox-promotion" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-promotion">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
-                      <div class="col-md-12">
-                        <div class="form__group">
-                          <button class="form__btn btn btn--big button-winona" type="submit" name="promotion">Продвинуть сайт</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                  <a href="#" class="btn btn--big button-winona">Продвинуть сайт</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <span class="icon linear-icon-chart-growth"></span><br>
+          Уличшим позиции в выдаче поисковых систем
         </div>
-      </div>
-      <div class="swiper-slide slider__overlay context-dark" style="background-image: url(dist/images/slider-reputation.jpg)">
-        <div class="swiper-slide-caption">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-md-12 col-sm-12">
-                <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
-                <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                  Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда в поисковой выдаче.</h5>
-                <div class="slider__wrapper-form">
-                  <form action="#" class="form" method="post">
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="email" placeholder="Ваше email">
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form__group">
-                          <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                      <div class="col-md-9">
-                        <div class="form__group">
-                          <div class="form__checkbox--center">
-                            <input id="checkbox-reputation" type="checkbox" name="policy" class="form__checkbox js-policy" checked><label for="checkbox-reputation">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="600">
-                      <div class="col-md-12">
-                        <div class="form__group">
-                          <button class="form__btn btn btn--big button-winona" type="submit" name="reputation">Продвинуть сайт</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="slider__button" data-caption-animate="fadeInUpSmall" data-caption-delay="450">
-                  <a href="#" class="btn btn--big button-winona">Продвинуть сайт</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <span class="icon linear-icon-diamond2"></span><br>
+          Создадим имидж надежной компании
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev linear-icon-chevron-left"></div>
-    <div class="swiper-button-next linear-icon-chevron-right"></div>
-  </div>
-</section>
-<section class="about">
-  <div class="container">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid autem corporis eaque excepturi expedita iure, labore libero magnam magni natus quaerat quam quidem quod repellendus soluta vel! Beatae, ipsa.
-  </div>
-</section>
-<section class="container">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam, asperiores assumenda beatae corporis debitis dolor doloremque ducimus eos esse expedita facere facilis laboriosam maiores modi molestias natus nostrum placeat provident quam quas quia quod rem sit ullam? Dolores doloribus dolorum exercitationem laudantium minus, necessitatibus suscipit tenetur? Ad animi, architecto aspernatur consequuntur dolorem doloremque dolores eligendi enim eos est, eum explicabo facilis harum laboriosam laborum numquam odio quae reiciendis sapiente suscipit veritatis vero voluptate. Animi maiores molestias possimus quaerat, quis quo suscipit! Error fugiat neque nihil obcaecati. Debitis ducimus, eos ex explicabo hic impedit inventore iste laudantium obcaecati quisquam ratione rerum saepe velit veniam vero. Nesciunt, soluta totam! Dolorem iure iusto libero possimus rem rerum temporibus? Accusantium assumenda at delectus eligendi et facilis impedit, incidunt ipsum laudantium maiores, minus necessitatibus neque perferendis quod quos repellat reprehenderit sed sint, tempore vero. Eum illum iusto molestias odit perferendis praesentium qui quibusdam velit. Illum minima reiciendis voluptates. Aperiam deleniti ea eveniet facere fuga fugit illum impedit inventore, nihil non praesentium quam quasi quidem quis quos recusandae reprehenderit ullam voluptatem? Aperiam at doloremque esse eum impedit iste labore laborum maxime nisi non, quasi quo, rerum sit tenetur ullam? Ab animi aspernatur consequatur corporis deserunt dicta, dolor eos ipsam iusto laborum nisi officia officiis omnis pariatur placeat reiciendis suscipit ullam voluptatibus. Dignissimos dolorem excepturi illo magnam modi nobis, quibusdam. Aspernatur cum expedita facilis inventore magni numquam perferendis placeat repellendus! Consequatur debitis deserunt exercitationem magnam maxime quis quos sunt! A ab deserunt dolorem hic illum inventore ipsa iste minima minus molestiae possimus sequi, ut. Consectetur culpa exercitationem, iure magni quasi quia quidem reprehenderit sint. A adipisci aliquam atque deleniti dignissimos earum fugit ipsum laudantium molestiae necessitatibus neque nisi perferendis porro provident quisquam quod ratione recusandae rerum, tempora, tenetur voluptates, voluptatibus voluptatum? Commodi, ducimus enim eum eveniet ex excepturi exercitationem hic id inventore ipsa laboriosam magnam neque quod temporibus ut veniam vero! Illum ipsam vero vitae. Aliquid, minus nihil? Accusamus commodi est fugit id laboriosam pariatur placeat quas quibusdam suscipit voluptate? Autem delectus facilis mollitia nesciunt odit sapiente voluptatum. Ab alias, aliquam asperiores aut delectus deserunt eos exercitationem facere harum hic id in laborum recusandae reprehenderit sed, tenetur ut. Accusamus accusantium consequatur distinctio ipsam laboriosam molestiae neque nisi non odio officia omnis, quam quia quisquam unde vel! Facilis possimus rem repellat. Commodi corporis dolorum ex excepturi laborum neque sapiente, sunt ut. Ducimus inventore nihil odio praesentium provident quae quidem veritatis, voluptatibus? Aperiam consequuntur culpa cum debitis dolore eaque eos eum facere harum hic libero magnam magni molestias mollitia nam neque omnis quis quo repellat repellendus, soluta suscipit tempore tenetur voluptatibus voluptatum! Amet deserunt enim exercitationem natus optio pariatur quae quia reprehenderit sit veniam! Adipisci aperiam beatae consectetur distinctio dolore dolorem eligendi est, et eveniet, ex facilis fugiat hic incidunt ipsa ipsam iste laudantium magnam natus neque non nostrum numquam odio odit officia officiis perferendis, possimus praesentium quo ratione reiciendis sequi sint sit sunt ullam veniam veritatis vitae. Blanditiis consequuntur exercitationem facere laudantium nisi placeat saepe vel vero? Ad, aperiam autem commodi culpa delectus dolore harum maxime nemo nobis, nostrum placeat quas quod sapiente tempora unde voluptatibus voluptatum. Consectetur consequatur cupiditate dolor enim eveniet in ipsa ipsum itaque molestias nisi pariatur possimus praesentium quas quasi qui quod sequi, sunt voluptatum? Adipisci alias asperiores assumenda consectetur consequatur cumque delectus dolorem eaque earum eius facere impedit iusto libero magni natus necessitatibus neque nisi pariatur praesentium provident similique, temporibus vel velit veniam voluptas! Accusamus asperiores at corporis debitis distinctio doloremque eligendi, fugit hic id inventore itaque minima minus mollitia obcaecati odit optio placeat ratione reiciendis repellat tempore tenetur veniam vitae. Alias aut molestias nulla voluptates! Accusantium aspernatur blanditiis cumque deleniti error facere pariatur reprehenderit unde. Ab ad beatae consequatur doloribus error, eum explicabo in ipsam libero nesciunt nobis nostrum reprehenderit, sapiente sed tenetur totam ut voluptas? Ab accusantium aliquid animi aspernatur aut, autem corporis cum dolorem dolores eum fugit impedit ipsam maxime, natus nemo obcaecati officiis quia, sint ut veritatis. A accusamus aliquid, consequatur cumque delectus dolor earum, expedita fuga iure maxime minus optio quidem saepe sint soluta! Ab accusantium adipisci animi, excepturi, harum magni, maxime odit officiis possimus praesentium quam temporibus voluptatem. Ad animi dicta distinctio doloribus ea expedita facilis inventore possimus rem reprehenderit, repudiandae similique sit soluta. A, accusantium amet animi commodi consequuntur delectus, ea expedita fugiat laudantium magnam necessitatibus nihil non quaerat quas quos sapiente tempore. Atque distinctio dolore magnam minus quo vero? Alias, autem commodi deserunt dolorem dolores explicabo ipsam labore natus quo quos, recusandae repellendus, repudiandae ullam? Eos, esse, reprehenderit. Ad aliquid animi, aperiam assumenda at deserunt ducimus facere facilis ipsa, iste labore magni molestias nisi nostrum omnis quas, quis tempora temporibus totam veritatis vitae voluptate voluptatem? Ea error quaerat reprehenderit rerum ullam. Dolorum ea harum neque, nobis nulla quasi rerum. Aspernatur cumque dolor dolore enim eos facilis illo incidunt, iusto laudantium molestiae obcaecati quis quisquam sint temporibus veniam? Consequuntur deleniti dignissimos dolores ducimus ea molestias, quam quia, ratione saepe soluta sunt totam vel voluptate! Architecto atque, consequuntur doloribus eveniet ex fugit harum labore laboriosam laudantium magni, maiores molestiae necessitatibus obcaecati quam qui quos sit ullam. Ab at, cum dolores itaque iusto labore molestias nulla odio officia officiis qui quos sint tenetur. Ab adipisci animi consectetur distinctio, ducimus eos eum fugit inventore laborum libero natus officiis praesentium provident quia vero voluptatem voluptates. Consectetur corporis esse et iure laborum molestias nihil provident quaerat quas veniam? Eius iusto officiis perferendis repellendus voluptate. Odio qui quos tempora. Ab aliquid cupiditate, esse iure nobis obcaecati quibusdam ratione temporibus veritatis. Amet aperiam aut, deleniti dolorum eius et laudantium odio omnis possimus repudiandae sunt tempora tempore ullam! Ad culpa dolorum, eligendi est, facilis fuga in iure magni minima qui quia quibusdam repudiandae sapiente temporibus unde. Expedita fugit inventore molestiae numquam, odit quasi sit? A, aperiam cum, dignissimos excepturi harum magni minima nobis perferendis, quaerat quisquam quod temporibus velit vero! Aspernatur consequatur dignissimos dolorem eos et excepturi, incidunt ipsum maiores omnis pariatur perspiciatis possimus qui, quia quidem reiciendis! Aliquid at esse illum inventore ipsa ipsum libero minima nemo nulla odio quis, rem, tempora voluptatibus. Aspernatur aut autem consequatur, culpa dignissimos et impedit ipsa molestias necessitatibus nisi non repellat saepe? Alias animi aperiam assumenda, atque dolorum, nemo nisi omnis optio possimus provident quam sit temporibus velit. Atque beatae deleniti est libero natus! At consequatur corporis dignissimos distinctio fuga id illo ipsa, itaque iure obcaecati odio, odit perferendis possimus quaerat rem soluta suscipit totam voluptate voluptatem, voluptatum. Accusamus corporis dolorum incidunt provident reiciendis. Ab accusantium ad amet consequatur consequuntur delectus deleniti dolor ducimus eaque esse ex exercitationem expedita illo iste iusto laborum magni molestiae nam neque nobis, officia provident quas quisquam quo quod ratione sed sint soluta, suscipit velit vero voluptate voluptates voluptatum! A at consectetur culpa delectus, deleniti dolor doloribus, ducimus eaque earum eos illo inventore itaque nesciunt nisi non perspiciatis provident quaerat, quam qui quibusdam quis repellat sit soluta tenetur totam! At culpa deleniti deserunt dolorum ipsum, iusto labore laudantium, mollitia, quaerat repudiandae velit voluptate. Consequuntur dolorem incidunt itaque labore saepe? Alias, aperiam architecto aspernatur assumenda debitis dignissimos distinctio ea est exercitationem fugiat harum ipsum neque nobis non nostrum odio, porro quaerat quam quas quasi reprehenderit tempora temporibus tenetur ullam velit vero voluptas. Accusantium consequuntur deleniti dolores doloribus dolorum error esse ex explicabo in ipsam iure labore libero magnam modi neque, nostrum pariatur perspiciatis praesentium quo quos reiciendis repellat sed sequi sit soluta vel velit vitae? Assumenda, tempora, vero! Ad aspernatur assumenda at atque aut beatae blanditiis commodi consequatur deserunt dolores ducimus enim error expedita illum incidunt iste necessitatibus placeat, porro possimus quae, quas quia quis quisquam quos sed soluta ullam vel veniam voluptatem voluptatum. Ad assumenda cum, deleniti dolor eaque eligendi facilis iste labore laboriosam magnam nihil nobis placeat quod reprehenderit sapiente ullam vitae voluptatum. A ab amet assumenda blanditiis commodi cupiditate, debitis dolores ducimus earum eligendi exercitationem illo illum inventore ipsa iste, itaque laboriosam laborum modi molestiae mollitia necessitatibus odit omnis optio praesentium quidem quis quod sequi, sunt tempore vel? Ab asperiores consequuntur cupiditate est laboriosam libero molestiae obcaecati recusandae tenetur vero! Accusantium asperiores at consequuntur dolores error est eum eveniet, exercitationem fugit harum magni neque placeat provident rem sint ullam voluptates? Aliquam consequuntur, hic id odio recusandae tempore veritatis. Adipisci, iure suscipit! Ad aliquid cupiditate eligendi error explicabo facere fugiat itaque magni, minus modi necessitatibus neque nobis omnis possimus quia quo reiciendis soluta temporibus unde veniam. Consequuntur, dignissimos facere fuga libero magnam numquam odit perspiciatis reiciendis sint tenetur? Aspernatur dignissimos dolorum eum fugiat minima natus neque omnis. Accusamus accusantium alias beatae cum dolorem dolores, dolorum, earum fugiat impedit iste laudantium mollitia perspiciatis porro praesentium quasi quidem sequi tenetur totam ut vitae. Commodi consequatur, cupiditate ducimus nemo numquam odio quia quibusdam quos repellat tempore. Aliquid beatae cumque cupiditate deleniti, distinctio ducimus id nostrum odio quisquam recusandae? Beatae dolorem iure officiis reprehenderit saepe. Animi delectus libero nihil rem voluptas voluptatibus! Amet consectetur dignissimos ipsa itaque neque quasi recusandae rerum saepe sapiente voluptatem. Accusantium, aliquid assumenda autem consequatur cum delectus deleniti deserunt dolor ducimus ea eaque eligendi eos fuga, fugiat fugit impedit incidunt inventore, iste iure libero minus nostrum nulla numquam officiis quae quasi reiciendis sapiente soluta ullam velit? Beatae excepturi ipsum labore laboriosam libero nisi quos saepe suscipit voluptatibus voluptatum. Beatae ea eveniet fugit nihil pariatur, tempore! Animi, provident, totam. Accusamus adipisci amet animi aperiam aspernatur aut commodi cupiditate dolore dolorem eius esse exercitationem, expedita facere facilis fugit hic illo impedit incidunt ipsum iste labore magni maxime minus mollitia neque nesciunt odio perferendis repellat soluta sunt tempora vel voluptas voluptatibus? Deserunt eveniet ex in incidunt minima omnis quidem, ratione recusandae. Amet architecto dolorem molestiae pariatur, perspiciatis placeat porro quo tenetur voluptates? Ab aliquid amet autem, consectetur doloribus ducimus est, explicabo illo ipsam iusto libero maiores, modi nam nemo nesciunt officia perspiciatis qui quia recusandae rem sapiente sequi suscipit tempore vitae voluptate? Ab aspernatur beatae consequatur deleniti eligendi itaque minus modi non, odio officiis pariatur, sit veniam. Aspernatur atque, autem cupiditate delectus deserunt distinctio dolorem, ducimus eaque eius est eveniet exercitationem fugiat harum illo iure laboriosam laborum minima minus modi mollitia, nisi odit officia perferendis praesentium quae quam quo rem sint soluta tempore tenetur ullam vero voluptate. Ab accusantium amet autem beatae corporis dicta doloribus est eum ex facilis fugit illo ipsum iste molestias mollitia natus nobis numquam odit quasi quo reprehenderit saepe sit totam, unde vel. Assumenda autem consectetur dolorem, dolorum eum, ex excepturi libero molestias mollitia natus nostrum numquam, pariatur voluptate. Fuga, porro tempore? Ab assumenda autem commodi deleniti deserunt dignissimos dolorem eum exercitationem fugiat inventore iure laudantium minus molestiae nemo pariatur possimus quia quidem repellat rerum, ut vel voluptas voluptatibus. Adipisci aliquid, deserunt ea eos eum facere itaque nobis officia quod voluptates. Amet debitis error exercitationem illum iure natus possimus quisquam quo, reiciendis rem, rerum sint tempore ullam veritatis, voluptatibus? Accusantium aliquam architecto asperiores assumenda cumque eaque et, ex exercitationem, fugit necessitatibus neque nihil numquam totam. Ab dolorem hic laborum unde! Atque eos magnam, maiores obcaecati quis vel voluptatem! Amet consequuntur dolorum, eaque esse eveniet exercitationem illo ipsa libero maiores nulla porro possimus ratione sequi sunt suscipit? Ad, animi laborum minima nemo perferendis perspiciatis tempore. Ab animi architecto aspernatur at doloribus dolorum, eius eos eum ex facilis fugiat fugit inventore iste itaque iusto, laudantium, minima minus nisi omnis optio quisquam reiciendis repellendus repudiandae suscipit tenetur totam vel veritatis? Animi asperiores aspernatur atque, commodi debitis deleniti dolor dolorem eaque error exercitationem facere in ipsa ipsum itaque laudantium libero maiores nisi nobis nulla obcaecati odio porro provident quaerat quia quibusdam quod reiciendis sequi similique suscipit vel. Aliquid assumenda blanditiis consequatur hic officiis porro totam voluptatum. Assumenda cum eius eligendi eveniet impedit quae qui reiciendis, repellat sit temporibus! Accusantium adipisci atque consectetur delectus dolore dolorum error est expedita fuga fugit hic impedit ipsam laborum libero magni minus natus neque perspiciatis, quasi quod repudiandae sint sit! Ad animi architecto facere ipsam nihil quia velit? Ex iusto labore neque nesciunt nostrum odit rem? Adipisci assumenda commodi modi? Debitis doloremque dolorum obcaecati praesentium quaerat.
-</section>
+  </section>
+</div>
 <script src="dist/js/lib.js"></script>
 <script src="dist/js/main.js"></script>
 </body>

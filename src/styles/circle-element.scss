@@ -1,0 +1,17 @@
+.circle-element {
+  position: relative;
+  //margin: -150px -15%;
+  margin: -100px -30%;
+  z-index: 1;
+  overflow: hidden;
+  height: 100px;
+  &__wrapper {
+    background: $color-bg;
+    border-radius: 50% 50% 0 0;
+    width: 100%;
+    height: 800px;
+  }
+  &__after {
+    margin-top: 100px;
+  }
+}
