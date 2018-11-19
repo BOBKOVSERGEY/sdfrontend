@@ -69,22 +69,6 @@
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  /*&:after {
-    content: "SitesDevelopment";
-    display: inline-block;
-    font-size: 400px;
-    font-weight: 800;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-family: $fontTwoExtraBold;
-    line-height: .4;
-    letter-spacing: .06em;
-    text-shadow: 10px 20px 35px rgba(0, 0, 0, 0.8);
-    color: #fff;
-    opacity: .1;
-    z-index: 2;
-  }*/
 }
 
 .swiper-container-android .swiper-slide,
@@ -118,6 +102,21 @@
   -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  &:after {
+    content: "SitesDevelopment";
+    display: inline-block;
+    font-size: 332px;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    font-family: $fontTwoExtraBold;
+    line-height: .4;
+    letter-spacing: .06em;
+    text-shadow: 10px 20px 35px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: .1;
+    z-index: 2;
+  }
 }
 
 .swiper-slide .container,

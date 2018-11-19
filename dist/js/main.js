@@ -23,6 +23,7 @@
       swiper: document.querySelectorAll( '.swiper-container' ),
       vide: $(".vide_bg"),
       buttonWinona: $('.button-winona'),
+      customCarousel: document.querySelectorAll( '.circle-carousel' ),
     };
   $window.on('load', function () {
 
@@ -1414,6 +1415,17 @@
         swiper = new Swiper ( plugins.swiper[i], options );
       }
     };
+
+    // Circle carousel
+    if( plugins.customCarousel.length ) {
+      for ( var i = 0; i < plugins.customCarousel.length; i++ ) {
+        var carousel = initCarousel({
+          node: plugins.customCarousel[i],
+          speed: plugins.customCarousel[i].getAttribute( 'data-speed' ),
+          autoplay: plugins.customCarousel[i].getAttribute( 'data-autoplay' )
+        });
+      }
+    }
 
     /**
      * WOW
