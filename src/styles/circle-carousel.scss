@@ -100,7 +100,10 @@
   align-items: center;
 }
 
-.circle-carousel .content-title h4 {
+.circle-carousel .content-title h4 a {
+  font-family: $fontTwoBold;
+  letter-spacing: 1px;
+  font-size: 3.2rem;
   color: #fff;
 }
 
@@ -131,9 +134,9 @@
   border-radius: 50%;
   pointer-events: auto;
   transition: .3s;
-  background-color: #1F2845;
+  background-color: $color-primary;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, .7);
 }
 
 .circle-carousel .pagination .dot:before, .circle-carousel .pagination .dot:after {
@@ -153,7 +156,7 @@
   width: 30%;
   height: 30%;
   filter: blur(3px);
-  border: 6px solid #F48E2A;
+  border: 6px solid $color-primary;
   z-index: -1;
 }
 
@@ -164,7 +167,7 @@
   width: 40%;
   height: 40%;
   border-radius: 50%;
-  border: 10px solid #FE9290;
+  border: 10px solid $color-secondary;
   z-index: 5;
 }
 
@@ -191,7 +194,7 @@
 }
 
 .circle-carousel .pagination .item.active .dot {
-  background-color: #654BE4;
+  background-color: $color-secondary;
   color: #fff;
 }
 
