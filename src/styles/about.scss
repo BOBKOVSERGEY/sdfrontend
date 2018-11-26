@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  padding: 0  0 120px 0;
+  padding: 120px 0;
   z-index: 1;
   &:before {
     position: absolute;
@@ -58,13 +58,13 @@
     text-align: center;
     width: 131px;
     height: 131px;
-    border: 2px solid rgba($color-heading, .55);
+    border: 2px solid rgba($color-heading, .85);
     border-radius: 50%;
     margin: 0 auto 20px auto;
     line-height: 131px;
     transition: .28s ease-out;
     &:hover {
-      border: 2px solid rgba($color-heading, .85);
+      border: 2px solid rgba($color-heading, .99);
       transform: translateY(-3px);
       filter: drop-shadow(-8px 8px 2px rgba(0, 0, 0, 0.2));
     }
