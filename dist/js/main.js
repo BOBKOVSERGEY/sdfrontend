@@ -19,7 +19,7 @@
       rdNavbar: $(".rd-navbar"),
       wow: $(".wow"),
       multitoggle: document.querySelectorAll( '[data-multitoggle]' ),
-      pageLoader: $(".page-loader"),
+      pageLoader: $(".preloader"),
       swiper: document.querySelectorAll( '.swiper-container' ),
       vide: $(".vide_bg"),
       buttonWinona: $('.button-winona'),
@@ -29,12 +29,12 @@
 
 
     //Page loader
-    /*if (plugins.pageLoader.length && !isNoviBuilder) {
+    if (plugins.pageLoader.length && !isNoviBuilder) {
         var loader = setTimeout(function () {
           plugins.pageLoader.addClass("loaded");
           $window.trigger("resize");
-        }, 200);
-    }*/
+        }, 10);
+    }
 
     // Multitoggles
     if(plugins.multitoggle.length) {

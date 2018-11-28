@@ -48,3 +48,34 @@
     }
   }
 }
+
+@media only screen and (max-width : 1400px) {
+  .services {
+    &:before {
+      font-size: 405px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .services {
+    padding: 60px 0;
+    &:before {
+      font-size: 290px;
+    }
+  }
+}
+@media only screen and (max-width : 768px) {
+  .services {
+    &:before {
+      font-size: 211px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .services {
+    &:before {
+      font-size: 117px;
+    }
+  }
+}

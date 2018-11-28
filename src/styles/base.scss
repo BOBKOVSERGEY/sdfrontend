@@ -38,6 +38,12 @@ button {
   overflow: hidden;
   min-height: 100vh !important;
 }
+.link-logo {
+  color: $color-dark;
+  &:hover {
+    color: $color-dark;
+  }
+}
 
 @media only screen and (max-width : 768px) {
   .hidden-phone {

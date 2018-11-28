@@ -52,6 +52,7 @@
   &__do-description {
     text-align: center;
     color: $color-heading;
+    margin-bottom: 30px;
 
   }
   &__icon {
@@ -77,6 +78,38 @@
       font-size: 32px;
       margin: 0 15px;
       color: $color-secondary;
+    }
+  }
+}
+
+@media only screen and (max-width : 1300px) {
+  .about {
+
+    &:before {
+      font-size: 465px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .about {
+    padding: 60px 0;
+    &:before {
+      font-size: 350px;
+    }
+  }
+}
+@media only screen and (max-width : 768px) {
+  .about {
+    &:before {
+      font-size: 265px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .about {
+    &:before {
+      font-size: 160px;
     }
   }
 }
