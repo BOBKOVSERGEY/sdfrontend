@@ -99,4 +99,9 @@
       transform: rotate(-5deg);
     }
   }
+  &__copy {
+    margin-top: 30px;
+    color: $color-heading;
+    font-size: 2.2rem;
+  }
 }
