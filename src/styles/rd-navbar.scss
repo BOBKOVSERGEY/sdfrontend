@@ -249,15 +249,22 @@
 
 .rd-navbar-popup {
   position: absolute;
-  padding: 15px 25px 20px 20px;
+  padding: 40px 40px 20px 40px;
   width: calc(100vw - 10px);
-  border-radius: 6px;
+  border-radius: 60px;
+  //border-top: 3px solid $color-secondary;
+  border: 3px solid transparent;
+  border-top-color: $color-secondary;
+  border-right-color: $color-primary;
+  border-bottom-color: $color-tertiary;
+  border-left-color: $color-purple;
+  //border: 5px solid $color-primary;
   opacity: 0;
   visibility: hidden;
   transition: .2s;
-  box-shadow: 0 5px 10px 1px rgba(230,230,230,.3);
+  //box-shadow: 0 5px 10px 1px rgba(230,230,230,.3);
   overflow: hidden;
-  background-color: $color-primary;
+  background-color: $color-white;
 }
 
 .rd-navbar-popup::before {
@@ -307,11 +314,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .rd-navbar-popup {
-    padding: 40px;
-  }
-}
 
 
 /*
@@ -482,7 +484,7 @@
   font-family: 'Material Design Icons';
   font-size: inherit;
   line-height: inherit;
-  color: $color-cream;
+  color: $color-white;
   opacity: 0;
   visibility: hidden;
 }

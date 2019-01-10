@@ -1,9 +1,29 @@
 .form {
   font-family: $fontTwoBook;
+  &__heading {
+    font-family: $fontTwoMedium;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: $color-heading;
+  }
   &__group {
     margin-bottom: 30px;
     position: relative;
+    /*&--icon {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 24.5px;
+        left: 22px;
+        transform: translateY(-61%);
+        margin-right: 7px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #c7c7c7;
+      }
+    }*/
   }
+
   &__input {
     font-family: inherit;
     display: block;
@@ -12,16 +32,18 @@
     -webkit-appearance: none;
     font-size: 2rem;
     padding: 5px 18px;
-    color: $color-secondary;
+    color: $color-white;
     background: none;
     border: 2px solid $color-white;
     border-radius: 35px;
     height: 50px;
     transition: .3s all ease;
+
     &:focus {
       outline: none;
-      border: 2px solid $color-cream;
-      box-shadow: inset 0 0 10px rgba($color-white, 0.55);
+      border: 2px solid $color-white;
+      background: rgba($color-white, .2);
+      box-shadow: 8px 10px 20px rgba($color-white,.1);
     }
     &::-webkit-input-placeholder {
       color: $color-white;
@@ -42,7 +64,44 @@
         //box-shadow: inset 0 0 5px rgba(#a94442, .8);
       }
     }
+
+    &--nav {
+      border: 2px solid $color-gray-primary;
+      /*border-top-color: $color-secondary;
+      border-right-color: $color-primary;
+      border-bottom-color: $color-tertiary;
+      border-left-color: $color-purple;*/
+      background: $color-gray-primary;
+      box-shadow: 8px 10px 20px rgba(0,0,0,.1);
+      color: $color-heading;
+      &:focus {
+        outline: none;
+        border: 2px solid $color-gray-primary;
+        background: $color-white;
+        box-shadow: 8px 10px 20px rgba(0,0,0,.1);
+      }
+      &::-webkit-input-placeholder {
+        color: $color-gray;
+      }
+      &::-moz-placeholder {
+        color: $color-gray;
+      }
+      &:-ms-input-placeholder {
+        color: $color-gray;
+      }
+      &:placeholder-shown {
+        color: $color-gray;
+      }
+      &.error {
+        //border-bottom: 2px solid #a94442;
+        &:focus {
+          //border-bottom: 2px solid #a94442;
+          //box-shadow: inset 0 0 5px rgba(#a94442, .8);
+        }
+      }
+    }
   }
+
 
   &__checkbox + label {
     position: relative;
