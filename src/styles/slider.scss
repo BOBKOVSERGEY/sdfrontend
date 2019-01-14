@@ -69,7 +69,8 @@
       font-size: 3.2rem;
     }
     &__description {
-      font-size: 2.2rem;
+      font-family: $fontTwoBook;
+      font-size: $default-font-size
     }
   }
 }

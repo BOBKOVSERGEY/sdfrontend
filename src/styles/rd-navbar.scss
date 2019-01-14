@@ -1807,7 +1807,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-thin.rd-navbar-static .rd-navbar-popup {
-  left: 50%;
+  left: 41%;
   z-index: 110;
   transform: translateX(-50%);
   margin-top: 30px;
@@ -1900,10 +1900,15 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-thin.rd-navbar-fixed .rd-navbar-popup {
   position: fixed;
-  right: 5px;
   margin-top: 20px;
   overflow-y: auto;
   max-height: calc(100vh - 56px - 10px);
+  @media only screen and (max-width : 768px) {
+    right: 5px;
+  }
+  @media only screen and (max-width : 480px) {
+    right: -35px;
+  }
 }
 
 .rd-navbar-thin.rd-navbar-fixed .rd-navbar-brand {
