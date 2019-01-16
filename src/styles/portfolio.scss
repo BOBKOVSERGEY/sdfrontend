@@ -1,3 +1,37 @@
+.portfolio {
+  position: relative;
+  padding: 120px 0;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 620px;
+    font-family: $fontTwoBold;
+    line-height: .668;
+    color: inherit;
+    opacity: .03;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__list {
+    font-family: $fontTwoBook;
+    text-align: center;
+    margin-top: 50px;
+    & li {
+      display: inline-block;
+      margin-left: 15px;
+      &>a {
+        color: $color-heading;
+      }
+      &>a.active {
+        color: $color-secondary;
+      }
+    }
+  }
+}
 .img-thumbnail-variant-3 {
   position: relative;
   display: block;
@@ -6,6 +40,7 @@
   cursor: pointer;
   box-shadow: 8px 10px 35px rgba(0, 0, 0, 0.15);
   width: 100%;
+  border-radius: 10px;
 }
 
 .img-thumbnail-variant-3 img {
@@ -28,14 +63,14 @@
 .img-thumbnail-variant-3 .label-custom {
   position: absolute;
   z-index: 11;
-  top: 18px;
+  bottom: 18px;
   left: 18px;
   padding: 2px 7px;
   font-size: 12px;
   font-style: italic;
-  background-color: #fff;
-  border-radius: 4px;
-  color: #000;
+  background-color: #f8006b;
+  border-radius: 15px;
+  color: #fff;
 }
 
 .img-thumbnail-variant-3 .caption {
@@ -48,7 +83,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 15px;
-  background-color: rgba(128, 222, 234, 0.6);
+  //background-color: rgba(128, 222, 234, 0.6);
+  background-image: linear-gradient(0deg, rgba(#000036, .5) 0%, rgba(#12009C, .5) 48%, rgba(#4F0160, .5) 98%);
   transition: 250ms ease-in-out;
 }
 
@@ -145,5 +181,25 @@
 @keyframes hover-blur {
   100% {
     filter: blur(3px);
+  }
+}
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ececee;
+}
+
+[data-isotope-layout] [class*=col-] {
+  display: block;
+  will-change: transform;
+  backface-visibility: hidden;
+  transition: .1s opacity ease-in;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  [data-isotope-layout] [class*=col-] {
+    margin-top: 50px;
   }
 }

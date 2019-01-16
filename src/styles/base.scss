@@ -21,6 +21,7 @@ a:hover {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 button {
   &:active,
@@ -75,4 +76,10 @@ button {
 
 .bg-overlay-dark:before {
   background-color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 1400px) {
+  .row:not(.no-gutters)>[class*=col] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
