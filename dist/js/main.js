@@ -19,26 +19,24 @@
       rdNavbar: $(".rd-navbar"),
       wow: $(".wow"),
       multitoggle: document.querySelectorAll( '[data-multitoggle]' ),
-      pageLoader: $(".preloader"),
       swiper: document.querySelectorAll( '.swiper-container' ),
       vide: $(".vide_bg"),
       buttonWinona: $('.button-winona'),
       customCarousel: document.querySelectorAll( '.circle-carousel' ),
       isotope: $(".isotope"),
+      policy: $(".js-policy"),
       lightGallery: $("[data-lightgallery='group']"),
       lightGalleryItem: $("[data-lightgallery='item']"),
       lightDynamicGalleryItem: $("[data-lightgallery='dynamic']"),
     };
+
+  setTimeout(() => {
+    document.querySelector('.preloader').classList.add('loaded');
+  }, 1000);
+
+
   $window.on('load', function () {
 
-
-    //Page loader
-    if (plugins.pageLoader.length && !isNoviBuilder) {
-        var loader = setTimeout(function () {
-          plugins.pageLoader.addClass("loaded");
-          $window.trigger("resize");
-        }, 10);
-    }
 
     // Multitoggles
     if(plugins.multitoggle.length) {
@@ -49,6 +47,13 @@
 
   $(function () {
     isNoviBuilder = window.xMode;
+
+    /**
+     * parallax scroll function
+     */
+    if($('[data-parallax-scroll]').length && !isNoviBuilder && !isMobile){
+      ParallaxScroll.init();
+    }
 
     /**
      * @desc Initialize the gallery with set of images
@@ -285,6 +290,34 @@
           document.body.className += ' ' + $rdNavbar.attr("data-body-class");
         }
 
+      }
+    }
+    
+    // check policy
+
+
+
+    $('.js-policy-1').on('click', function(){
+      checkPolicy(this, '.form__btn-1');
+    });
+    $('.js-policy-2').on('click', function(){
+      checkPolicy(this, '.form__btn-2');
+    });
+    $('.js-policy-3').on('click', function(){
+      checkPolicy(this, '.form__btn-3');
+    });
+    $('.js-policy-4').on('click', function(){
+      checkPolicy(this, '.form__btn-4');
+    });
+
+
+
+    
+    function checkPolicy(checkbox, btn) {
+      if ($(checkbox).is(':checked')) {
+        $(btn).prop('disabled', false);
+      } else {
+        $(btn).prop('disabled', true);
       }
     }
 

@@ -28,6 +28,14 @@
   }
 }
 
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn.disabled, .btn:disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
 @media only screen and (max-width : 480px) {
   .btn {
     &--big {
