@@ -49,6 +49,30 @@
     isNoviBuilder = window.xMode;
 
     /**
+     * owl - js-reviews main
+     */
+    $('.js-reviews').owlCarousel({
+      animateOut: 'slideOutDown',
+      animateIn: 'flipInX',
+      items:1,
+      //margin:30,
+      //stagePadding:30,
+      smartSpeed:450,
+      //nav:true,
+      //dots:false,
+      loop:true,
+      navElement: 'div class="owl-slider-arrow"',
+      navText:[],
+      responsive:{
+        480:{
+          nav:true,
+          dots:false,
+        }
+      }
+
+    });
+
+    /**
      * parallax scroll function
      */
     if($('[data-parallax-scroll]').length && !isNoviBuilder && !isMobile){

@@ -1,0 +1,23 @@
+.reviews {
+  position: relative;
+  padding: 120px 0;
+  background-color: $color-white;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 50rem;
+    font-family: $fontTwoBold;
+    line-height: .668;
+    color: inherit;
+    opacity: .03;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__button-all-review {
+    margin-top: 30px;
+  }
+}

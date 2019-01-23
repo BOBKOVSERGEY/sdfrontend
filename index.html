@@ -363,7 +363,7 @@
       </div>
       <!-- Circle carousel data-speed="1000" data-autoplay="5000" -->
       <div class="carousel-wrapper">
-        <div class="circle-carousel" data-speed="1000">
+        <div class="circle-carousel" data-speed="1000" data-autoplay="5000">
           <!-- slides -->
           <div class="slides">
             <div class="content-box">
@@ -371,9 +371,9 @@
                 <div class="content-box-img bg-overlay-dark" style="background-image: url(dist/images/service-1.jpg)">
                   <div class="content-title-wrap">
                     <div class="content-title">
-                      <h4><a href="#">Промо-сайты</a></h4>
+                      <h4 class="services__item-heading"><a href="#">Промо-сайты</a></h4>
                       <div class="services__price">от 40 000 <i class="fas fa-ruble-sign"></i></div>
-                      <!--<div class="services__hit"><span>hit</span></div>-->
+                      <div class="services__hit"><span>hit</span></div>
                       <!--<div class="services__new">new</div>-->
                     </div>
                   </div>
@@ -411,6 +411,7 @@
                     <div class="content-title">
                       <h4><a href="#">Блоги</a></h4>
                       <div class="services__price">от 60 000 <i class="fas fa-ruble-sign"></i></div>
+                      <div class="services__hit"><span>hit</span></div>
                     </div>
                   </div>
                 </div>
@@ -457,7 +458,8 @@
                 <div class="content-box-img bg-overlay-dark" style="background-image: url(dist/images/service-8.jpg)">
                   <div class="content-title-wrap">
                     <div class="content-title">
-                      <h4><a href="#">Делаем клиентов счастливыми</a></h4>
+                      <h4><a href="#">Создаем имидж надежной компании</a></h4>
+                      <div class="services__price">от 35 000 <i class="fas fa-ruble-sign"></i></div>
                     </div>
                   </div>
                 </div>
@@ -704,6 +706,61 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="reviews" data-content="Reviews">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="services__heading">Что говорят клиенты</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10 offset-md-1 text-center">
+          <div class="owl-carousel js-reviews">
+            <div class="owl-item">
+              <div class="reviews__item">
+                <div class="reviews__item-img">
+                  <img src="dist/images/review-1.jpg" alt="">
+                </div>
+                <div class="reviews__item-description">
+                  От лица ООО "ФГК ГРУПП" выражаем благодарность за разработку красивого, качественного, приятного в обращении сайта. Хотим отметить скорость исполнения - от подачи заявки до сдачи нам готового продукта прошло не более 10 дней.
+                </div>
+                <div class="reviews__item-author">
+                  Генеральный директор "ФГК-ГРУПП"
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="reviews__item">
+                <div class="reviews__item-img">
+                  <img src="dist/images/review-1.jpg" alt="">
+                </div>
+                <div class="reviews__item-description">
+                  От всего коллектива выражаем Вам глубокую благодарность за профессиональную и эффективную работу по созданию и продвижению нашего интернет-магазина.
+                </div>
+                <div class="reviews__item-author">
+                  Руководитель интернет-магазина "Холдинг-Консул"
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="reviews__item">
+                <div class="reviews__item-img">
+                  <img src="dist/images/review-1.jpg" alt="">
+                </div>
+                <div class="reviews__item-description">
+                  От всей души выражаю Вам искреннюю благодарность за качественно проделанную работу по созданию, оптимизации и продвижению сайта нашего общества. Проделанная Вами работа выполнена с высоким профессионализмом и личным вежливым отношением.
+                </div>
+                <div class="reviews__item-author">
+                  Генеральный директор "Паньковское"
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__button-all-review">
+            <a href="#" class="btn btn--big button-winona">Все отзывы</a>
+          </div>
+        </div>
+      </div>
+      </div>
   </section>
   <footer class="footer">
     <div class="container">

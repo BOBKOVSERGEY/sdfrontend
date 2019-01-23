@@ -160,6 +160,8 @@
   z-index: -1;
 }
 
+
+
 .circle-carousel .pagination .dot:after {
   transform-origin: bottom left;
   top: 100%;
@@ -208,6 +210,19 @@
   display: none;
 }
 
+.circle-carousel .content-box.active .services__hit {
+  animation: animateHit 5s forwards;
+}
+
+@keyframes animateHit {
+  from {
+    transform: translate(0, 100%) scale(.3);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 @media (min-width: 1200px) {
   .circle-carousel .prev,
   .circle-carousel .next {
@@ -238,3 +253,4 @@
     font-size: 2.4rem;
   }
 }
+
