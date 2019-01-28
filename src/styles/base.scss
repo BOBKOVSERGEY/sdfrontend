@@ -7,6 +7,15 @@ body {
   font-size: $default-font-size;
   color: $color-dark;
   background-color: $color-bg;
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: $color-bg;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border-radius: 10px;
+    height: 71px;
+  }
 }
 
 ul {
@@ -87,9 +96,17 @@ button {
   background-repeat: no-repeat;
   pointer-events: none;
 }
+.hidden-desktop {
+  display: none;
+}
 @media (min-width: 1400px) {
   .row:not(.no-gutters)>[class*=col] {
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .hidden-desktop {
+    display: block;
   }
 }

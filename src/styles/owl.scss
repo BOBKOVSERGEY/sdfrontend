@@ -1,6 +1,7 @@
 .owl-carousel {
   display: none;
   width: 100%;
+  margin-top: 30px;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
@@ -133,7 +134,7 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
+  //background: url("owl.video.play.png") no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -231,13 +232,14 @@
 
 .owl-slider-arrow.owl-next, .owl-slider-arrow.owl-prev {
   font: 400 40px/72px "FontAwesome";
-  color: #fff;
+  color: $color-primary;
   transition: .3s all ease;
 }
 
 .owl-slider-arrow:hover {
   opacity: .5;
   cursor: pointer;
+  transform: scale(1.2);
 }
 .owl-slider-arrow.owl-next {
   right: 0px;

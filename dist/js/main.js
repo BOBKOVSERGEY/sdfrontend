@@ -60,6 +60,7 @@
       smartSpeed:450,
       //nav:true,
       //dots:false,
+      autoplay: 8000,
       loop:true,
       navElement: 'div class="owl-slider-arrow"',
       navText:[],

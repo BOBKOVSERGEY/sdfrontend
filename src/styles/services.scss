@@ -43,11 +43,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
+    color: $color-white;
     & span {
       display: inline-block;
       transform: rotate(35deg);
       font-size: 53px;
-      animation: animateHitWord 5s forwards;
+      animation: animateHitWord 3s forwards;
     }
   }
   &__heading {

@@ -20,4 +20,41 @@
   &__button-all-review {
     margin-top: 30px;
   }
+  &__item {
+    padding: 0 55px;
+  }
+  &__item-img {
+    width: 140px;
+    height: 140px;
+    margin: 15px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 7px solid rgba($color-tertiary, .4);
+    & img {
+      max-width: 100%;
+      border-radius: 50%;
+      transition: all .5s;
+      &:hover {
+        transform: scale(1.5);
+        filter: blur(3px) brightness(80%);
+      }
+    }
+  }
+  &__item-description {
+    //font-family: $fontTwoLight;
+    //color: $color-white;
+    //font-size: 16px;
+    margin-bottom: 15px;
+  }
+  &__item-author {
+    font-family: $fontTwoLight;
+    color: $color-heading;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .reviews {
+    &__item {
+      padding: 0 15px;
+    }
+  }
 }
