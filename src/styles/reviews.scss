@@ -9,13 +9,22 @@
     left: 0;
     content: attr(data-content);
     display: inline-block;
-    font-size: 50rem;
+    font-size: 45rem;
     font-family: $fontTwoBold;
     line-height: .668;
     color: inherit;
     opacity: .03;
     pointer-events: none;
     z-index: 2;
+    @media only screen and (max-width : 992px) {
+      font-size: 24rem;
+    }
+    @media only screen and (max-width : 768px) {
+      font-size: 19rem;
+    }
+    @media only screen and (max-width : 480px) {
+      font-size: 9rem;
+    }
   }
   &__button-all-review {
     margin-top: 30px;
@@ -29,7 +38,12 @@
     margin: 15px auto;
     overflow: hidden;
     border-radius: 50%;
-    border: 7px solid rgba($color-tertiary, .4);
+    //border: 7px solid rgba($color-tertiary, .4);
+    border: 7px solid transparent;
+    border-top-color: rgba($color-secondary, .4);
+    border-right-color: rgba($color-primary, .4);
+    border-bottom-color: rgba($color-tertiary, .4);
+    border-left-color: rgba($color-primary, .4);
     & img {
       max-width: 100%;
       border-radius: 50%;
