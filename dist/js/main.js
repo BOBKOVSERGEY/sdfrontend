@@ -30,9 +30,12 @@
       lightDynamicGalleryItem: $("[data-lightgallery='dynamic']"),
     };
 
-  setTimeout(() => {
-    document.querySelector('.preloader').classList.add('loaded');
-  }, 1000);
+  if (document.querySelector('.preloader')) {
+    setTimeout(() => {
+      document.querySelector('.preloader').classList.add('loaded');
+    }, 1100);
+  }
+
 
 
   $window.on('load', function () {
