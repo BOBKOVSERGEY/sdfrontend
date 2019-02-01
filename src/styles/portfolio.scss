@@ -87,6 +87,9 @@
   background-image: linear-gradient(0deg, rgba(#000036, .5) 0%, rgba(#12009C, .5) 48%, rgba(#4F0160, .5) 98%);
   transition: 250ms ease-in-out;
 }
+.img-thumbnail-variant-3 .caption .linear-icon-unlink {
+  color: $color-tertiary;
+}
 
 .img-thumbnail-variant-3 .caption > * {
   color: #fff;
