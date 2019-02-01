@@ -1,4 +1,11 @@
 "use strict";
+//preloader
+if (document.querySelector('#loader-wrapper')) {
+  setTimeout(() => {
+    document.querySelector('body').classList.add('loaded');
+  }, 1100);
+}
+
 (function () {
   // Global variables
   var userAgent = navigator.userAgent.toLowerCase(),
@@ -30,14 +37,6 @@
       lightDynamicGalleryItem: $("[data-lightgallery='dynamic']"),
     };
 
-  if (document.querySelector('.preloader')) {
-    setTimeout(() => {
-      document.querySelector('.preloader').classList.add('loaded');
-    }, 1100);
-  }
-
-
-
   $window.on('load', function () {
 
 
@@ -63,7 +62,9 @@
       smartSpeed:450,
       //nav:true,
       //dots:false,
-      autoplay: 8000,
+      autoplay: true,
+      autoplayTimeout:10000,
+      autoplayHoverPause:true,
       loop:true,
       navElement: 'div class="owl-slider-arrow"',
       navText:[],

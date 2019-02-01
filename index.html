@@ -11,15 +11,10 @@
 </head>
 <body>
 <div class="page">
-  <div class="preloader" id="loading">
-    <div class="preloader-body">
-      <div id="loading-center-object">
-        <div class="object" id="object_four"></div>
-        <div class="object" id="object_three"></div>
-        <div class="object" id="object_two"></div>
-        <div class="object" id="object_one"></div>
-      </div>
-    </div>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
   </div>
   <header class="header">
     <!-- RD Navbar-->
@@ -139,7 +134,7 @@
   <section class="slider">
     <!--data-effect="coverflow" data-loop="false" data-direction="horizontal" data-autoplay="6000" data-mousewheel="false" data-keyboard="true"-->
     <div class="swiper-container swiper-slider context-dark swiper-slider_fullheight" data-effect="coverflow"
-         data-loop="false" data-direction="horizontal" data-autoplay="6000" data-mousewheel="false"
+         data-loop="false" data-direction="horizontal" data-autoplay="12000" data-mousewheel="false"
          data-keyboard="true">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/The-Launch-2"
@@ -250,7 +245,7 @@
                 <div class="col-lg-10 col-md-12 col-sm-12">
                   <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
                   <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                    Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда в поисковой выдаче.</h5>
+                    Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда.</h5>
                   <div class="slider__wrapper-form">
                     <form action="#" class="form" method="post">
                       <div class="row" data-caption-animate="fadeInUpSmall" data-caption-delay="300">
@@ -310,8 +305,7 @@
       <div class="text-center">
         <h2 class="about__heading">О нас</h2>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius laudantium nisi non quae quibusdam rerum vel voluptatibus! Autem dicta enim fuga illo in maiores necessitatibus officia omnis sint tempora.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius laudantium nisi non quae quibusdam rerum vel voluptatibus! Autem dicta enim fuga illo in maiores necessitatibus officia omnis sint tempora.</p>
+      <p>ЭсДи - команда профессиональных, энергичных людей с талантливыми программистами, дизайнерами, интернет-маркетолагами и опытными менеджерами, которые могут помочь вам в безупречном и своевременном выполнении любого проекта. С самого первого дня мы предоставляем креативные и уникальные веб-сайты нашим клиентам.</p>
       <div class="about__do">
         <div class="row">
           <div class="col-md-3">
@@ -725,6 +719,19 @@
                   <img src="dist/images/review-1.jpg" alt="">
                 </div>
                 <div class="reviews__item-description">
+                  <p>От лица ООО "СТРОЙМЕХАНИЗАЦИЯ" выражаем признательность компании "Сайтс Девелопмент" и в частности Бобкову Сергею за оперативную и качественную работу по разработке промо-сайта компании http://stroymekhanizatsiya.ru. Работа проведена в соответствии с Договором в указанные сроки, с учетом всех пожеланий. Желаем успехов вашей компании.</p>
+                </div>
+                <div class="reviews__item-author">
+                  Генеральный директор ООО "СТРОЙМЕХАНИЗАЦИЯ"
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="reviews__item">
+                <div class="reviews__item-img">
+                  <img src="dist/images/review-1.jpg" alt="">
+                </div>
+                <div class="reviews__item-description">
                   От лица ООО "ФГК ГРУПП" выражаем благодарность за разработку красивого, качественного, приятного в обращении сайта. Хотим отметить скорость исполнения - от подачи заявки до сдачи нам готового продукта прошло не более 10 дней.
                 </div>
                 <div class="reviews__item-author">
@@ -795,7 +802,7 @@
                   Напишите нам
                 </div>
                 <div class="footer__item-desc">
-                  <a href="mailto:info@sitesdevelopment.ru">info@sitesdevelopment.ru</a>
+                  <a href="mailto:info@esdi.ru">info@esdi.ru</a>
                 </div>
               </div>
             </div>
@@ -856,7 +863,8 @@
             </ul>
           </div>
           <div class="col-lg-3">
-            3
+            <div class="features-box-icon"></div>
+            <i class="flaticon-promotion"></i>
           </div>
         </div>
       </div>
