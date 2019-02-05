@@ -30,7 +30,8 @@
     font-size: 28px;
   }
   &__hit {
-    font-family: $fontTwoBold;
+    font-family: $fontOneBold;
+    //text-transform: uppercase;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +51,7 @@
     & span {
       display: inline-block;
       transform: rotate(35deg);
-      font-size: 53px;
+      font-size: 3rem;
       color: $color-secondary;
       animation: animateHitWord 3s forwards;
     }
@@ -107,6 +108,14 @@
   .services {
     &:before {
       font-size: 211px;
+    }
+    &__hit {
+      height: 100px;
+      width: 100px;
+
+      & span {
+        font-size: 2rem;
+      }
     }
   }
 }

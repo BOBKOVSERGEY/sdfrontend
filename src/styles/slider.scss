@@ -1,5 +1,17 @@
 .slider {
+  position: relative;
   overflow: hidden;
+  /*&:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: url(../images/1.png) bottom -2px center no-repeat;
+    background-size: 100%;
+  }*/
   &__heading {
     font-family: $fontTwoBold;
     font-size: 72px;

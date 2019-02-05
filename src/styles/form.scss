@@ -6,6 +6,12 @@
     margin-bottom: 20px;
     color: $color-heading;
   }
+  &--subscribe {
+    //display: flex;
+    //flex-flow: row wrap;
+    //align-items: center;
+    margin-top: 30px;
+  }
   &__group {
     margin-bottom: 30px;
     position: relative;
@@ -22,6 +28,12 @@
         color: #c7c7c7;
       }
     }*/
+    &--subscribe {
+      //display: flex;
+      //flex: 0 0 auto;
+      //flex-flow: row wrap;
+      //align-items: center;
+    }
   }
 
   &__input {
@@ -253,5 +265,8 @@
   display: none;
 }
 #checkbox-form-nav {
+  display: none;
+}
+#checkbox-form-subscribe {
   display: none;
 }

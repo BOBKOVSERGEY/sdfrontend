@@ -2,7 +2,7 @@
   position: relative;
   padding: 120px 0;
   //background-color: $color-white;
-  background: url(../images/4.png) bottom center no-repeat $color-white;
+  background: url(../images/1.png) bottom center no-repeat $color-white;
   background-size: 100%;
   /*&:before {
     position: absolute;
@@ -13,6 +13,10 @@
     height: 390px;
     background: url(../images/4.png) no-repeat;
   }*/
+  &__heading-subscribe {
+    font-size: 2.4rem;
+    color: $color-dark;
+  }
   &__item {
     display: flex;
     align-items: center;

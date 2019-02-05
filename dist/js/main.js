@@ -338,6 +338,9 @@ if (document.querySelector('#loader-wrapper')) {
     $('.js-policy-4').on('click', function(){
       checkPolicy(this, '.form__btn-4');
     });
+    $('.js-policy-5').on('click', function(){
+      checkPolicy(this, '.form__btn-5');
+    });
 
 
 
@@ -345,8 +348,10 @@ if (document.querySelector('#loader-wrapper')) {
     function checkPolicy(checkbox, btn) {
       if ($(checkbox).is(':checked')) {
         $(btn).prop('disabled', false);
+        console.log(checkbox, btn);
       } else {
         $(btn).prop('disabled', true);
+        console.log(checkbox, btn);
       }
     }
 

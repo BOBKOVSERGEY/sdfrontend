@@ -1,0 +1,35 @@
+.contact-form {
+  position: relative;
+  padding: 120px 0;
+  z-index: 1;
+  &__heading {
+    font-family: $fontTwoBold;
+    font-size: 6.2rem;
+    color: $color-heading;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    &:before {
+      top: 0;
+      width: 70px;
+      height: 20px;
+      content: "";
+      position: absolute;
+      background-color: $color-primary;
+      border-radius: 10px;
+      z-index: -1;
+    }
+    &:after {
+      bottom: -5px;
+      width: 70px;
+      left: 0;
+      height: 20px;
+      content: '';
+      position: absolute;
+      background-color: $color-secondary;
+      border-radius: 10px;
+      z-index: -1;
+      transform: rotate(-5deg);
+    }
+  }
+}

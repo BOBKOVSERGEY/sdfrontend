@@ -216,7 +216,7 @@
 
 @keyframes animateHit {
   from {
-    transform: translate(0, 100%) scale(.3);
+    transform: translate(0, 100%) scale(.3) rotate(-180deg);
   }
   to {
     transform: translate(-50%, -50%) scale(1);
@@ -249,7 +249,7 @@
 }
 @media only screen and (max-width : 768px) {
   .circle-carousel .content-title h4 {
-    line-height: .5;
+    line-height: 1;
   }
   .circle-carousel .content-title h4 a {
     font-size: 2rem;
@@ -258,9 +258,6 @@
 }
 
 @media only screen and (max-width : 480px) {
-  .circle-carousel .content-title h4 {
-    line-height: .5;
-  }
   .circle-carousel .content-title h4 a {
     font-size: 1.8rem;
 
