@@ -35,6 +35,7 @@ if (document.querySelector('#loader-wrapper')) {
       lightGallery: $("[data-lightgallery='group']"),
       lightGalleryItem: $("[data-lightgallery='item']"),
       lightDynamicGalleryItem: $("[data-lightgallery='dynamic']"),
+      slick: $(".slick-slider"),
     };
 
   $window.on('load', function () {
@@ -49,6 +50,81 @@ if (document.querySelector('#loader-wrapper')) {
 
   $(function () {
     isNoviBuilder = window.xMode;
+
+    /**
+     * slick-slider**/
+    if (plugins.slick.length) {
+      for (var i = 0; i < plugins.slick.length; i++) {
+        var $slickItem = $(plugins.slick[i]);
+        $slickItem
+          .slick({
+            slidesToScroll:
+              parseInt($slickItem.attr("data-slide-to-scroll"), 10) || 1,
+            asNavFor: $slickItem.attr("data-for") || false,
+            dots: $slickItem.attr("data-dots") === "true",
+            infinite: isNoviBuilder
+              ? false
+              : $slickItem.attr("data-loop") === "true",
+            focusOnSelect: true,
+            fade: $slickItem.attr("data-fade") === "true",
+            arrows: $slickItem.attr("data-arrows") === "true",
+            swipe: $slickItem.attr("data-swipe") === "true",
+            autoplay: $slickItem.attr("data-autoplay") === "true",
+            vertical: $slickItem.attr("data-vertical") === "true",
+            centerMode: $slickItem.attr("data-center-mode") === "true",
+            centerPadding: $slickItem.attr("data-center-padding")
+              ? $slickItem.attr("data-center-padding")
+              : "0.50",
+            mobileFirst: true,
+            responsive: [
+              {
+                breakpoint: 0,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr("data-items"), 10) || 1
+                }
+              },
+              {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow:
+                    parseInt($slickItem.attr("data-sm-items"), 10) || 1
+                }
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow:
+                    parseInt($slickItem.attr("data-md-items"), 10) || 1
+                }
+              },
+              {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow:
+                    parseInt($slickItem.attr("data-lg-items"), 10) || 1
+                }
+              },
+              {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow:
+                    parseInt($slickItem.attr("data-xl-items"), 10) || 1
+                }
+              }
+            ]
+          })
+          .on("afterChange", function(event, slick, currentSlide, nextSlide) {
+            var $this = $(this),
+              childCarousel = $this.attr("data-child");
+            if (childCarousel) {
+              $(childCarousel + " .slick-slide").removeClass("slick-current");
+              $(childCarousel + " .slick-slide")
+                .eq(currentSlide)
+                .addClass("slick-current");
+            }
+          });
+      }
+    };
 
     /**
      * owl - js-reviews main
