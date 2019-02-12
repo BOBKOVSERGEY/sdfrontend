@@ -70,3 +70,26 @@
     }
   }
 }
+
+.quote-light {
+  text-align: center;
+  font-family: $fontTwoLight;
+}
+.quote-light-cite {
+  font-style: normal;
+}
+.quote-light-caption {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  color: $color-gray;
+}
+.quote-light-mark {
+  margin: 20px 0;
+  fill: #aeb1be;
+}
+.quote-light-text {
+
+}
+.quote-light-footer img{
+  margin: 20px auto;
+}

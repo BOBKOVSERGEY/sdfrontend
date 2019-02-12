@@ -11,6 +11,22 @@
     z-index: 1000;
     background: url(../images/1.png) bottom -2px center no-repeat;
     background-size: 100%;
+  }
+  &:after {
+    content: '13';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    right: 100px;
+    z-index: 1000;
+    background: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 150px;
+    color: $color-white;
   }*/
   &__heading {
     font-family: $fontTwoBold;

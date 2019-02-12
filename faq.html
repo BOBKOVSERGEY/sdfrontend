@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="ru" class="wide wow-animation">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SitesDevelopment - ЭСДИ</title>
+  <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link rel="stylesheet" href="dist/css/main.css?=6">
+</head>
+<body>
+<div class="page">
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <header class="header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+      <nav class="rd-navbar rd-navbar-thin" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="0" data-xl-stick-up-offset="0" data-xxl-stick-up-offset="0" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-NaN"><span></span></button>
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
+              <img src="dist/images/logo.svg" alt="ЭСДИ" class="header__logo-img"> <span class="header__logo">SitesDevelopment</span><span class="header__logo--phone">ЭСДИ</span>
+            </a>
+              <div class="rd-navbar-block">
+                <ul class="list-inline-bordered">
+                  <li>
+                    <button class="rd-navbar-popup-toggle btn btn--top button-winona" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil hidden-desktop"></span><span class="header__button-call hidden-phone">Начать проект</span></button>
+                    <div class="rd-navbar-popup" id="rd-navbar-login-NaN">
+                      <h4 class="form__heading">Начать проект</h4>
+                      <form class="form" method="post" autocomplete="off">
+                        <div class="form__group">
+                          <input class="form__input form__input--nav" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group">
+                          <input class="form__input form__input--nav" type="email" autocomplete="off" name="email" placeholder="Ваше email">
+                        </div>
+                        <div class="form__group">
+                          <input class="form__input form__input--nav" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form__group">
+                          <div class="form__checkbox--center">
+                            <input id="checkbox-form-nav" type="checkbox" name="policy" class="form__checkbox--nav js-policy-4" checked><label for="checkbox-form-nav">Соглавсие на обработку персональных данных</label>
+                          </div>
+                        </div>
+                        <div class="form__group">
+                          <button class="form__btn form__btn-4 btn btn--big button-winona" type="submit" name="start-project">Отправить</button>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android hidden-desktop"></span><span class="header__phone hidden-phone"> +7 (495) 664 38 15</span></a></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-NaN">
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/">
+              <img src="dist/images/logo.svg" height="43" alt="ЭСДИ">
+            </a>
+              <!-- RD Navbar Nav-->
+              <ul class="rd-navbar-nav">
+                <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Главная</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">ЭсДи</a>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Разработка</a>
+                  <!-- RD Navbar Dropdown-->
+                  <ul class="rd-menu rd-navbar-dropdown">
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Промо-сайт</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Интернет-магазин</a></li>
+                  </ul>
+                </li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Продвижение</a>
+                  <!-- RD Navbar Dropdown-->
+                  <ul class="rd-menu rd-navbar-dropdown">
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Реклама Яндекс</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Реклама Google</a></li>
+                  </ul>
+                </li>
+                <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
+                  <ul class="rd-menu rd-navbar-megamenu">
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Buttons</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Progress bars</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Tabs</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Accordions</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Testimonials</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Typography</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Forms</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">404 Page</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">503 Page</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Coming Soon</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Under Construction</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Gallery</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Grid Gallery</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Modern Gallery</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-megamenu-item">
+                      <ul class="rd-megamenu-list">
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Careers</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Search results</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Features</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Single Job</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Privacy policy</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Team</a></li>
+                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Pricing</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>-->
+                <li class="rd-nav-item"><a class="rd-nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="section section-md bg-gray-100">
+    <div class="container">
+      <!-- Bootstrap tabs-->
+      <div class="tabs-custom tabs-vertical tabs-line tabs-line-responsive flex-md-row-reverse" id="tabs-faq">
+        <!-- Nav tabs-->
+        <div class="nav-tabs-outer">
+          <div class="stuck-navbar stuck-2 navbar" data-navbar="{ &quot;stuck&quot;: { &quot;container&quot;: &quot;#tabs-faq&quot;, &quot;offsetRef&quot;: &quot;.rd-navbar-panel&quot;}, &quot;anchor&quot;: false }">
+            <div class="navbar-inner">
+              <button class="tabs-line-toggle" id="toggle" data-multitoggle="#tabs-faq-nav" data-scope="#toggle">Filter<span class="icon mdi mdi-chevron-down"></span></button>
+              <ul class="nav nav-tabs" id="tabs-faq-nav">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-faq-1" data-toggle="tab"><span>General</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-faq-2" data-toggle="tab"><span>Services</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-faq-3" data-toggle="tab"><span>Working with LeadGen</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-faq-4" data-toggle="tab"><span>Corporate Solutions</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-faq-5" data-toggle="tab"><span>Individual Solutions</span></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-faq-6" data-toggle="tab"><span>Other Questions</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tab panes-->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tabs-faq-1">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion1" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-3" aria-controls="accordion1-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-3" role="tabpanel" aria-labelledby="accordion1-heading-3" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-4" aria-controls="accordion1-collapse-4" aria-expanded="false">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-4" role="tabpanel" aria-labelledby="accordion1-heading-4" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-5" aria-controls="accordion1-collapse-5" aria-expanded="false">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-5" role="tabpanel" aria-labelledby="accordion1-heading-5" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-6" aria-controls="accordion1-collapse-6" aria-expanded="false">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-6" role="tabpanel" aria-labelledby="accordion1-heading-6" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion1-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion1-collapse-7" aria-controls="accordion1-collapse-7" aria-expanded="false">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion1-collapse-7" role="tabpanel" aria-labelledby="accordion1-heading-7" data-parent="#accordion1">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-faq-2">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion2" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion2-collapse-7" aria-controls="accordion2-collapse-7" aria-expanded="true">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion2-collapse-7" role="tabpanel" aria-labelledby="accordion2-heading-7" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-5" aria-controls="accordion2-collapse-5" aria-expanded="false">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-5" role="tabpanel" aria-labelledby="accordion2-heading-5" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-4" aria-controls="accordion2-collapse-4" aria-expanded="false">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-4" role="tabpanel" aria-labelledby="accordion2-heading-4" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-3" aria-controls="accordion2-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-3" role="tabpanel" aria-labelledby="accordion2-heading-3" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-2" aria-controls="accordion2-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-2" role="tabpanel" aria-labelledby="accordion2-heading-2" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-6" aria-controls="accordion2-collapse-6" aria-expanded="false">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-6" role="tabpanel" aria-labelledby="accordion2-heading-6" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion2-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion2-collapse-1" aria-controls="accordion2-collapse-1" aria-expanded="false">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion2-collapse-1" role="tabpanel" aria-labelledby="accordion2-heading-1" data-parent="#accordion2">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-faq-3">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion3" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion3-collapse-6" aria-controls="accordion3-collapse-6" aria-expanded="true">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion3-collapse-6" role="tabpanel" aria-labelledby="accordion3-heading-6" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-3" aria-controls="accordion3-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-3" role="tabpanel" aria-labelledby="accordion3-heading-3" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-5" aria-controls="accordion3-collapse-5" aria-expanded="false">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-5" role="tabpanel" aria-labelledby="accordion3-heading-5" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-1" aria-controls="accordion3-collapse-1" aria-expanded="false">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-1" role="tabpanel" aria-labelledby="accordion3-heading-1" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-7" aria-controls="accordion3-collapse-7" aria-expanded="false">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-7" role="tabpanel" aria-labelledby="accordion3-heading-7" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-2" aria-controls="accordion3-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-2" role="tabpanel" aria-labelledby="accordion3-heading-2" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion3-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion3-collapse-4" aria-controls="accordion3-collapse-4" aria-expanded="false">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion3-collapse-4" role="tabpanel" aria-labelledby="accordion3-heading-4" data-parent="#accordion3">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-faq-4">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion4" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion4-collapse-5" aria-controls="accordion4-collapse-5" aria-expanded="true">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion4-collapse-5" role="tabpanel" aria-labelledby="accordion4-heading-5" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-4" aria-controls="accordion4-collapse-4" aria-expanded="false">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-4" role="tabpanel" aria-labelledby="accordion4-heading-4" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-7" aria-controls="accordion4-collapse-7" aria-expanded="false">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-7" role="tabpanel" aria-labelledby="accordion4-heading-7" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-1" aria-controls="accordion4-collapse-1" aria-expanded="false">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-1" role="tabpanel" aria-labelledby="accordion4-heading-1" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-6" aria-controls="accordion4-collapse-6" aria-expanded="false">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-6" role="tabpanel" aria-labelledby="accordion4-heading-6" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-3" aria-controls="accordion4-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-3" role="tabpanel" aria-labelledby="accordion4-heading-3" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion4-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion4-collapse-2" aria-controls="accordion4-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion4-collapse-2" role="tabpanel" aria-labelledby="accordion4-heading-2" data-parent="#accordion4">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-faq-5">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion5" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion5-collapse-4" aria-controls="accordion5-collapse-4" aria-expanded="true">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion5-collapse-4" role="tabpanel" aria-labelledby="accordion5-heading-4" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-2" aria-controls="accordion5-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-2" role="tabpanel" aria-labelledby="accordion5-heading-2" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-3" aria-controls="accordion5-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-3" role="tabpanel" aria-labelledby="accordion5-heading-3" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-7" aria-controls="accordion5-collapse-7" aria-expanded="false">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-7" role="tabpanel" aria-labelledby="accordion5-heading-7" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-6" aria-controls="accordion5-collapse-6" aria-expanded="false">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-6" role="tabpanel" aria-labelledby="accordion5-heading-6" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-1" aria-controls="accordion5-collapse-1" aria-expanded="false">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-1" role="tabpanel" aria-labelledby="accordion5-heading-1" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion5-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion5-collapse-5" aria-controls="accordion5-collapse-5" aria-expanded="false">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion5-collapse-5" role="tabpanel" aria-labelledby="accordion5-heading-5" data-parent="#accordion5">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tabs-faq-6">
+            <!-- Bootstrap Collapse-->
+            <div class="card-group-custom card-group-classic" id="accordion6" role="tablist" aria-multiselectable="false">
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-5" role="tab">
+                  <div class="card-title"><a class="card-link" role="button" data-toggle="collapse" href="#accordion6-collapse-5" aria-controls="accordion6-collapse-5" aria-expanded="true">What am I allowed to do with the templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse show" id="accordion6-collapse-5" role="tabpanel" aria-labelledby="accordion6-heading-5" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-2" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-2" aria-controls="accordion6-collapse-2" aria-expanded="false">Do you provide any scripts with your templates?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-2" role="tabpanel" aria-labelledby="accordion6-heading-2" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are active. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active =please contact our Support Chat for clarification.,</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-1" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-1" aria-controls="accordion6-collapse-1" aria-expanded="false">What are the advantages of purchasing a website template?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-1" role="tabpanel" aria-labelledby="accordion6-heading-1" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-6" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-6" aria-controls="accordion6-collapse-6" aria-expanded="false">What is a unique/non-unique purchase?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-6" role="tabpanel" aria-labelledby="accordion6-heading-6" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-4" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-4" aria-controls="accordion6-collapse-4" aria-expanded="false">In what formats are your templates available?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-4" role="tabpanel" aria-labelledby="accordion6-heading-4" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-7" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-7" aria-controls="accordion6-collapse-7" aria-expanded="false">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-7" role="tabpanel" aria-labelledby="accordion6-heading-7" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Bootstrap card-->
+              <article class="card card-custom card-classic">
+                <div class="card-header" id="accordion6-heading-3" role="tab">
+                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse" href="#accordion6-collapse-3" aria-controls="accordion6-collapse-3" aria-expanded="false">What do I receive when I order a template from Zemez?
+                    <div class="card-arrow"></div></a></div>
+                </div>
+                <div class="collapse" id="accordion6-collapse-3" role="tabpanel" aria-labelledby="accordion6-heading-3" data-parent="#accordion6">
+                  <div class="card-body">
+                    <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="footer__item">
+              <div class="footer__item-icon">
+                <span class="fa fa-phone"></span>
+              </div>
+              <div class="footer__item-info">
+                <div class="footer__item-heading">
+                  Позвонить нам
+                </div>
+                <div class="footer__item-desc">
+                  <a href="tel:+74956643815">+7 (495) 664 38 15</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__item">
+              <div class="footer__item-icon">
+                <span class="fa fa-envelope"></span>
+              </div>
+              <div class="footer__item-info">
+                <div class="footer__item-heading">
+                  Написать нам
+                </div>
+                <div class="footer__item-desc">
+                  <a href="mailto:info@esdi.ru">info@esdi.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__item">
+              <div class="footer__item-icon">
+                <span class="fa fa-map-marker-alt"></span>
+              </div>
+              <div class="footer__item-info">
+                <div class="footer__item-heading">
+                  Приехать к нам
+                </div>
+                <div class="footer__item-desc">
+                  <a href="https://yandex.ru/maps/213/moscow/?ll=37.584694%2C55.812408&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.584698%252C55.812412%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A0%25D1%2583%25D1%2581%25D1%2582%25D0%25B0%25D0%25B2%25D0%25B5%25D0%25BB%25D0%25B8%252C%25203%25D0%25BA2%2520&z=17" target="_blank">Москва, Руставели 3к2, офис 6</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <a href="#" class="link-logo">
+              <div class="footer__logo">
+                <div class="footer__logo-img">
+                  <img src="dist/images/logo-footer.svg" alt="">
+                </div>
+                <div class="footer__logo-text">
+                  <span>Sites</span><span>Development</span>
+                </div>
+              </div>
+            </a>
+            <div class="footer__copy">
+              Copyright &copy;
+              <span id="year-footer">2018</span>.<br>
+              ООО "Сайтс Девелопмент".<br>
+              Все права защищиены.<br>
+              <a href="#" class="link-ps">Пользовательское соглашение</a>.</div>
+          </div>
+          <div class="col-lg-2">
+            <ul class="footer__link">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Vk</a></li>
+              <li><a href="#">GooglePlus</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <ul class="footer__link">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Разработка</a></li>
+              <li><a href="#">Продвижение</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer__heading-subscribe">Подписаться на рассылку</h3>
+            <form class="form form--subscribe" method="post" autocomplete="off">
+              <div class="form__group form__group--subscribe">
+                <input class="form__input form__input--nav" type="text" autocomplete="off" name="email" placeholder="Ваш email">
+                <button class="form__btn form__btn-5 btn button-winona btn--subscribe" type="submit" name="subscribe">Отправить</button>
+              </div>
+
+              <div class="form__group">
+                <div class="form__checkbox--center">
+                  <input id="checkbox-form-subscribe" type="checkbox" name="policy" class="form__checkbox--nav js-policy-5" checked>
+                  <label for="checkbox-form-subscribe">Соглавсие на обработку персональных данных</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="dist/js/lib.js?v=6"></script>
+<script src="dist/js/main.js?v=6"></script>
+</body>
+</html>

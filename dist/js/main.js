@@ -70,6 +70,7 @@ if (document.querySelector('#loader-wrapper')) {
             arrows: $slickItem.attr("data-arrows") === "true",
             swipe: $slickItem.attr("data-swipe") === "true",
             autoplay: $slickItem.attr("data-autoplay") === "true",
+            autoplaySpeed: $slickItem.attr("data-autoplaySpeed") ? $slickItem.attr("data-autoplaySpeed") : "15000",
             vertical: $slickItem.attr("data-vertical") === "true",
             centerMode: $slickItem.attr("data-center-mode") === "true",
             centerPadding: $slickItem.attr("data-center-padding")
