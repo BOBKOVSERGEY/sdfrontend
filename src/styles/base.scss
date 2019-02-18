@@ -12,7 +12,7 @@ body {
     background-color: $color-bg;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $color-primary;
+    background-color: $color-tertiary;
     border-radius: 10px;
     height: 71px;
   }
@@ -99,6 +99,52 @@ button {
 .hidden-desktop {
   display: none;
 }
+.logo-element {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  &__item-one {
+    background-image: linear-gradient(to right, #2ACAFF,#2ADFC3);
+    border-radius: 82% 18% 47% 53% / 45% 15% 85% 55%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 15s ease 0s normal none infinite running rotateElementLogo;
+  }
+  &__item-two {
+    background-image: linear-gradient(to left, #76AADB,#4A72B2);
+    border-radius: 82% 18% 47% 53% / 45% 15% 85% 55%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(177deg);
+    animation: 15s ease 0s normal none infinite running rotateElementLogoMinus;
+  }
+}
+
+@keyframes rotateElementLogo {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateElementLogoMinus {
+  0% {
+    transform: rotate(177deg);
+
+  }
+  100% {
+    transform: rotate(-537deg);
+  }
+}
+
 @media (min-width: 1400px) {
   .row:not(.no-gutters)>[class*=col] {
     padding-left: 25px;

@@ -46,9 +46,15 @@
       transform: rotate(-5deg);
     }
   }
+  &__wrap-img {
+    margin: 0 15px 20px 15px;
+    & img {
+      height: 260px;
+    }
+  }
   &__wrapper-img {
-    animation: 15s ease 0s normal none infinite running border_animate;
-    background: #fff none repeat scroll 0 0;
+    animation: 5s ease 0s normal none infinite running border_animate;
+    background: rgba($color-tertiary, .5) none repeat scroll 0 0;
     //background-image: linear-gradient(0deg, rgba($color-heading, .5) 0%, rgba(#12009C, .5) 48%, rgba($color-tertiary, .5) 98%);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     display: flex;
@@ -57,7 +63,7 @@
     //height: 270px;
     //width: 270px;
     margin: 0 auto 20px;
-    overflow: hidden;
+    //overflow: hidden;
     padding: 30px;
     text-align: center;
     & img {
