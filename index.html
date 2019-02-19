@@ -932,7 +932,7 @@
       <div class="row">
         <div class="col-md-10 offset-md-1 text-center">
           <div class="contact-form__wrapper">
-            <form class="form" method="post" autocomplete="off" enctype="multipart/form-data">
+            <form action="send-main.php" class="form form-contact" method="post" autocomplete="off" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-lg-4">
                   <div class="form__group">
@@ -946,34 +946,48 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="form__group">
-                    <input class="form__input form__input--nav" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                    <input class="form__input form__input--nav form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
                   </div>
                 </div>
               </div>
-              <div class="form__group">
-                <textarea name="comment" class="form__textarea form__textarea--nav" placeholder="Комментарий"></textarea>
-              </div>
-              <div class="form__group">
-                <input type="file" id="file-contact-form" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
-                <label class="upload-file" for="file-contact-form">
-                  <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
-                  <span class="upload-text-reset">Прикрепить файл</span>
-                </label>
-              </div>
-              <div class="form__group">
-                <div class="form__checkbox--center">
-                  <input id="checkbox-form-contact" type="checkbox" name="policy" class="form__checkbox--nav js-policy-6" checked>
-                  <label for="checkbox-form-contact">Соглавсие на обработку персональных данных</label>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form__group">
+                    <textarea name="comment" class="form__textarea form__textarea--nav" placeholder="Комментарий"></textarea>
+                  </div>
+                  <div class="form__group">
+                    <input type="file" id="file-contact-form" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+                    <label class="upload-file" for="file-contact-form">
+                      <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
+                      <span class="upload-text-reset">Прикрепить файл</span>
+                    </label>
+                  </div>
+                  <div class="form__group">
+                    <div class="form__checkbox--center">
+                      <input id="checkbox-form-contact" type="checkbox" name="policy" class="form__checkbox--nav js-policy-6" checked>
+                      <label for="checkbox-form-contact">Соглавсие на <a href="#">обработку</a> персональных данных</label>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <button class="form__btn form__btn-6 btn btn--big button-winona" type="submit" name="submit">Отправить</button>
+                  </div>
                 </div>
-              </div>
-              <div class="form__group">
-                <button class="form__btn form__btn-6 btn btn--big button-winona" type="submit" name="start-project">Отправить</button>
               </div>
             </form>
             <div class="contact-form__d-element-1"></div>
             <div class="contact-form__d-element-2"></div>
             <div class="contact-form__d-element-3"></div>
             <div class="contact-form__d-element-4"></div>
+            <div class="contact-form__d-element-5"></div>
+            <div class="contact-form__d-element-6"></div>
+            <div class="contact-form__d-element-7"></div>
+            <div class="contact-form__d-element-8"></div>
+            <div class="contact-form__loader-wrapper">
+              <div class="contact-form__loader-body">
+                <div class="contact-form__loader"></div>
+                <div class="contact-form__loader-text">Сообщение успешно отправлено, мы свяжемся с Вами!</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1079,7 +1093,7 @@
               <div class="form__group">
                 <div class="form__checkbox--center">
                   <input id="checkbox-form-subscribe" type="checkbox" name="policy" class="form__checkbox--nav js-policy-5" checked>
-                  <label for="checkbox-form-subscribe">Соглавсие на обработку персональных данных</label>
+                  <label for="checkbox-form-subscribe">Соглавсие на <a href="#">обработку</a> персональных данных</label>
                 </div>
               </div>
             </form>

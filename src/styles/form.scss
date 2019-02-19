@@ -363,6 +363,15 @@
       width: 36px;
     }
   }
+  &__phone {
+    transition: all 0s;
+    &:hover {
+      letter-spacing: 2.1px;
+    }
+    &:focus {
+      letter-spacing: 2.1px;
+    }
+  }
 
 }
 #checkbox-development {

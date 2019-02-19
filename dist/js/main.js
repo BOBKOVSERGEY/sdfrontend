@@ -36,6 +36,7 @@ if (document.querySelector('#loader-wrapper')) {
       lightGalleryItem: $("[data-lightgallery='item']"),
       lightDynamicGalleryItem: $("[data-lightgallery='dynamic']"),
       slick: $(".slick-slider"),
+      inputMask: $(".form__phone"),
     };
 
   $window.on('load', function () {
@@ -50,6 +51,70 @@ if (document.querySelector('#loader-wrapper')) {
 
   $(function () {
     isNoviBuilder = window.xMode;
+
+    /*input mask*/
+    if (plugins.inputMask.length) {
+      for (let i = 0; i < plugins.inputMask.length; i++) {
+        let inputMaskItem = $(plugins.inputMask[i]);
+        inputMaskItem.inputmask("+7(999)999-99-99")
+      }
+    }
+
+    /*validate modal-popup__form*/
+    $('.form-contact').validate({
+      submitHandler: function(form){
+        //var form = document.forms.formContact,
+          var formData = new FormData($('.form-contact')[0]),
+          xhr = new XMLHttpRequest();
+
+        xhr.open("POST", "/send-main.php");
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+            if(xhr.status == 200) {
+              $('.form-contact')[0].reset();
+              $('.upload-text-reset').text('Прикрепить файл');
+              let contactLoader = document.querySelector('.contact-form__loader-wrapper');
+               contactLoader.style.visibility = 'visible';
+               contactLoader.style.opacity = '1';
+              setTimeout(() => {
+                contactLoader.style.visibility = 'hidden';
+                contactLoader.style.opacity = '0';
+              }, 3000);
+              //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Заявка успешно отправлена!<div>');
+            } else {
+              //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
+            }
+          }
+        };
+        xhr.send(formData);
+      },
+      rules: {
+        name: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true
+        }
+
+      },
+      messages: {
+        name: {
+          required: "Введите Ваше имя"
+        },
+        email: {
+          required: "Введите адрес электронной почты",
+          email: "Не корректный адрес"
+        },
+        phone: {
+          required: "Введите Ваш телефон"
+        }
+      }
+    });
 
     /**
      * slick-slider**/

@@ -2,6 +2,7 @@
   position: relative;
   padding: 120px 0;
   z-index: 1;
+
   &__heading {
     font-family: $fontTwoBold;
     font-size: 6.2rem;
@@ -90,5 +91,113 @@
     @media only screen and (max-width : 768px) {
       display: none;
     }
+  }
+  &__d-element-5 {
+    position: absolute;
+    top: 290px;
+    right: -70px;
+    width: 130px;
+    height: 50px;
+    background: $color-bg;
+    border-radius:  35px 0 0 35px;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  &__d-element-6 {
+    position: absolute;
+    top: 240px;
+    right: -60px;
+    width: 100px;
+    height: 50px;
+    background: $color-white;
+    border-radius:  35px;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  &__d-element-7 {
+    position: absolute;
+    top: 210px;
+    right: -100px;
+    width: 130px;
+    height: 30px;
+    background: $color-bg;
+    border-radius:  35px 0 0 35px;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  &__d-element-8 {
+    position: absolute;
+    top: 180px;
+    right: -30px;
+    width: 70px;
+    height: 30px;
+    background: $color-white;
+    border-radius: 35px;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  &__loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-primary;
+
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: $color-secondary;
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: $color-tertiary;
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+  }
+  &__loader-wrapper {
+    position: absolute;
+    border-radius: 20px;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color-white, .7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  &__loader-text {
+    margin-top: 20px;
   }
 }
