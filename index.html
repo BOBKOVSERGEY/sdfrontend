@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SitesDevelopment - ЭСДИ</title>
+  <meta name="description" content="Разработка и продвижение сайтов лубой сложности от landing page до крупных интернет магазинов с нестандартным функционалом">
   <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
   <link rel="stylesheet" href="dist/css/main.css?=7">
   <meta property="og:url" content="http://esdi.ru">
@@ -24,6 +25,7 @@
   <meta property="twitter:image:height" content="315">
   <meta name="msapplication-TileColor" content="#2A5977">
   <meta name="theme-color" content="#2A5977">
+  <meta name="yandex-verification" content="6512f4b9bb1481ce">
 </head>
 <body>
 <div class="page">
@@ -50,26 +52,34 @@
                   <li>
                     <button class="rd-navbar-popup-toggle btn btn--top button-winona" data-rd-navbar-toggle="#rd-navbar-login-NaN"><span class="mdi mdi-pencil hidden-desktop"></span><span class="header__button-call hidden-phone">Начать проект</span></button>
                     <div class="rd-navbar-popup" id="rd-navbar-login-NaN">
-                      <h4 class="form__heading">Начать проект</h4>
-                      <form class="form" method="post" autocomplete="off">
-                        <div class="form__group">
-                          <input class="form__input form__input--nav" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
-                        </div>
-                        <div class="form__group">
-                          <input class="form__input form__input--nav" type="email" autocomplete="off" name="email" placeholder="Ваше email">
-                        </div>
-                        <div class="form__group">
-                          <input class="form__input form__input--nav" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                        </div>
-                        <div class="form__group">
-                          <div class="form__checkbox--center">
-                            <input id="checkbox-form-nav" type="checkbox" name="policy" class="form__checkbox--nav js-policy-4" checked><label for="checkbox-form-nav">Соглавсие на обработку персональных данных</label>
+                      <div class="form-nav__wrapper">
+                        <h4 class="form__heading">Начать проект</h4>
+                        <form class="form form-nav" action="#" method="post" autocomplete="off">
+                          <div class="form__group">
+                            <input class="form__input form__input--nav" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                          </div>
+                          <div class="form__group">
+                            <input class="form__input form__input--nav" type="email" autocomplete="off" name="email" placeholder="Ваше email">
+                          </div>
+                          <div class="form__group">
+                            <input class="form__input form__input--nav form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                          </div>
+                          <div class="form__group">
+                            <div class="form__checkbox--center">
+                              <input id="checkbox-form-nav" type="checkbox" name="policy" class="form__checkbox--nav js-policy-4" checked><label for="checkbox-form-nav">Соглавсие на обработку персональных данных</label>
+                            </div>
+                          </div>
+                          <div class="form__group">
+                            <button class="form__btn form__btn-4 btn btn--big button-winona" type="submit" name="submit">Отправить</button>
+                          </div>
+                        </form>
+                        <div class="form-nav__loader-wrapper">
+                          <div class="form-nav__loader-body">
+                            <div class="form-nav__loader"></div>
+                            <div class="form-nav__loader-text">Сообщение успешно отправлено, мы свяжемся с Вами!</div>
                           </div>
                         </div>
-                        <div class="form__group">
-                          <button class="form__btn form__btn-4 btn btn--big button-winona" type="submit" name="start-project">Отправить</button>
-                        </div>
-                      </form>
+                      </div>
                     </div>
                   </li>
                   <li><a class="link-title" href="tel:+74956643815"><span class="mdi mdi-cellphone-android hidden-desktop"></span><span class="header__phone hidden-phone"> +7 (495) 664 38 15</span></a></li>
@@ -150,7 +160,7 @@
   <section class="slider">
     <!--data-effect="coverflow" data-loop="false" data-direction="horizontal" data-autoplay="6000" data-mousewheel="false" data-keyboard="true"-->
     <div class="swiper-container swiper-slider context-dark swiper-slider_fullheight" data-effect="coverflow"
-         data-loop="false" data-direction="horizontal" data-autoplay="15000" data-mousewheel="false"
+         data-loop="false" data-direction="horizontal" data-mousewheel="false"
          data-keyboard="true">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide_video context-dark video-bg-overlay vide_bg" data-vide-bg="dist/video/The-Launch-2"
@@ -177,7 +187,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form__group">
-                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                            <input class="form__input form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
                           </div>
                         </div>
                       </div>
@@ -230,7 +240,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form__group">
-                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                            <input class="form__input form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
                           </div>
                         </div>
                       </div>
@@ -283,7 +293,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="form__group">
-                            <input class="form__input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                            <input class="form__input form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
                           </div>
                         </div>
                       </div>
@@ -932,7 +942,7 @@
       <div class="row">
         <div class="col-md-10 offset-md-1 text-center">
           <div class="contact-form__wrapper">
-            <form action="send-main.php" class="form form-contact" method="post" autocomplete="off" enctype="multipart/form-data">
+            <form action="#" class="form form-contact" method="post" autocomplete="off" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-lg-4">
                   <div class="form__group">
@@ -1105,5 +1115,21 @@
 </div>
 <script src="dist/js/lib.js?v=7"></script>
 <script src="dist/js/main.js?v=7"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(52468930, "init", {
+    id:52468930,
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52468930" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>

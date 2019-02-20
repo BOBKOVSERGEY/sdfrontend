@@ -56,11 +56,11 @@ if (document.querySelector('#loader-wrapper')) {
     if (plugins.inputMask.length) {
       for (let i = 0; i < plugins.inputMask.length; i++) {
         let inputMaskItem = $(plugins.inputMask[i]);
-        inputMaskItem.inputmask("+7(999)999-99-99")
+        inputMaskItem.inputmask("+7 (999) 999-99-99")
       }
     }
 
-    /*validate modal-popup__form*/
+    /*validate form-contact*/
     $('.form-contact').validate({
       submitHandler: function(form){
         //var form = document.forms.formContact,
@@ -72,11 +72,12 @@ if (document.querySelector('#loader-wrapper')) {
         xhr.onreadystatechange = function() {
           if (xhr.readyState == 4) {
             if(xhr.status == 200) {
-              $('.form-contact')[0].reset();
-              $('.upload-text-reset').text('Прикрепить файл');
+
               let contactLoader = document.querySelector('.contact-form__loader-wrapper');
                contactLoader.style.visibility = 'visible';
                contactLoader.style.opacity = '1';
+              $('.form-contact')[0].reset();
+              $('.upload-text-reset').text('Прикрепить файл');
               setTimeout(() => {
                 contactLoader.style.visibility = 'hidden';
                 contactLoader.style.opacity = '0';
@@ -108,6 +109,60 @@ if (document.querySelector('#loader-wrapper')) {
         },
         email: {
           required: "Введите адрес электронной почты",
+          email: "Не корректный адрес"
+        },
+        phone: {
+          required: "Введите Ваш телефон"
+        }
+      }
+    });
+
+    /*validate form-form-nav*/
+    $('.form-nav').validate({
+      submitHandler: function(form){
+        //var form = document.forms.formContact,
+        var formData = new FormData($('.form-nav')[0]),
+          xhr = new XMLHttpRequest();
+
+        xhr.open("POST", "/send-nav.php");
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+            if(xhr.status == 200) {
+              let contactLoader = document.querySelector('.form-nav__loader-wrapper');
+              contactLoader.style.visibility = 'visible';
+              contactLoader.style.opacity = '1';
+              $('.form-nav')[0].reset();
+              setTimeout(() => {
+                contactLoader.style.visibility = 'hidden';
+                contactLoader.style.opacity = '0';
+              }, 3000);
+            } else {
+              //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
+            }
+          }
+        };
+        xhr.send(formData);
+      },
+      rules: {
+        name: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true
+        }
+
+      },
+      messages: {
+        name: {
+          required: "Введите Ваше имя"
+        },
+        email: {
+          required: "Введите Ваш email",
           email: "Не корректный адрес"
         },
         phone: {
@@ -493,10 +548,10 @@ if (document.querySelector('#loader-wrapper')) {
     function checkPolicy(checkbox, btn) {
       if ($(checkbox).is(':checked')) {
         $(btn).prop('disabled', false);
-        console.log(checkbox, btn);
+
       } else {
         $(btn).prop('disabled', true);
-        console.log(checkbox, btn);
+
       }
     }
 
