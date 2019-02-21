@@ -46,6 +46,14 @@
       //flex: 0 0 auto;
       //flex-flow: row wrap;
       //align-items: center;
+      & label.error {
+        position: absolute;
+        left: 21px;
+        top: 3px;
+        font-size: 11px;
+        color: #dc0000;
+        transition: all 1s;
+      }
     }
   }
 
@@ -419,7 +427,7 @@
     top: 0;
     left: -15px;
     right: -15px;
-    bottom: 0;
+    bottom: -15px;
     display: flex;
     justify-content: center;
     align-items: center;
