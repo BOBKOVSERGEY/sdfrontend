@@ -1,3 +1,28 @@
+<?php
+/**
+ *
+ * GZIP сжатие
+ */
+function obSaveCookieAfter($s)
+{
+  setcookie("page_size_after", strlen($s));
+  return $s;
+}
+// Аналогично, но для Cookie page_size_before.
+function obSaveCookieBefore($s)
+{
+  setcookie("page_size_before", strlen($s));
+  return $s;
+}
+// Устанавливаем конвейер обработчиков.
+ob_start("obSaveCookieAfter");
+ob_start("ob_gzhandler", 9);
+ob_start("obSaveCookieBefore");
+/**
+ *
+ * END сжатие
+ */
+?>
 <!doctype html>
 <html lang="ru" class="wide wow-animation">
 <head>
@@ -8,7 +33,7 @@
   <title>ЭСДИ - Создание и продвижение сайтов</title>
   <meta name="description" content="Разработка и продвижение сайтов лубой сложности от landing page до крупных интернет магазинов с нестандартным функционалом">
   <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
-  <link rel="stylesheet" href="dist/css/main.css?=7">
+  <link rel="stylesheet" href="dist/css/main.css?=12">
   <meta property="og:url" content="http://esdi.ru">
   <meta property="og:site_name" content="Разработка и продвижение сайтов лубой сложности от landing page до крупных интернет магазинов с нестандартным функционалом">
   <meta property="og:image" content="http://esdi.ru/dist/images/share.jpg">
@@ -171,7 +196,7 @@
                 <div class="col-lg-10 col-md-12 col-sm-12">
                   <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
                   <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                    Разработка сайтов любой сложности от landing-page до крупных интернет-магазинов с нестандартным функционалом</h5>
+  Разработка сайтов любой сложности от landing-page до крупных интернет-магазинов с нестандартным функционалом</h5>
                   <div class="slider__wrapper-form">
                     <form class="form form-slider" action="#"  method="post" autocomplete="off">
                       <input type="hidden" name="service" value="Разработка">
@@ -225,7 +250,7 @@
                 <div class="col-lg-10 col-md-12 col-sm-12">
                   <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
                   <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                    Сделаем комплекс мер по внутренней и внешней оптимизации для поднятия позиций сайта в результатах выдачи поисковых систем.</h5>
+  Сделаем комплекс мер по внутренней и внешней оптимизации для поднятия позиций сайта в результатах выдачи поисковых систем.</h5>
                   <div class="slider__wrapper-form">
                     <form action="#" class="form form-slider" method="post">
                       <input type="hidden" name="service" value="Продвижение">
@@ -279,7 +304,7 @@
                 <div class="col-lg-10 col-md-12 col-sm-12">
                   <h2 data-caption-animate="fadeInUpSmall" class="slider__heading">SitesDevelopment</h2>
                   <h5 class="slider__description" data-caption-animate="fadeInUpSmall" data-caption-delay="150">
-                    Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда.</h5>
+  Управление репутацией в интернете и в поисковой выдаче, найдем и нейтрализуем негативные отзывы, создадим положительный образ бренда.</h5>
                   <div class="slider__wrapper-form">
                     <form action="#" class="form form-slider" method="post">
                       <input type="hidden" name="service" value="Аудит репутации">
@@ -345,7 +370,7 @@
       <div class="text-center">
         <h2 class="about__heading">О нас</h2>
       </div>
-      <p>ЭсДи - команда профессиональных, энергичных людей с талантливыми программистами, дизайнерами, интернет-маркетологами и опытными менеджерами, которые могут помочь вам в безупречном и своевременном выполнении любого проекта. С самого первого дня мы предоставляем креативные и уникальные веб-сайты нашим клиентам.</p>
+      <p>ЭСДИ - команда профессиональных, энергичных людей с талантливыми программистами, дизайнерами, интернет-маркетологами и опытными менеджерами, которые могут помочь вам в безупречном и своевременном выполнении любого проекта. С самого первого дня мы предоставляем креативные и уникальные веб-сайты нашим клиентам.</p>
       <div class="about__do">
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -356,8 +381,8 @@
               <span class="icon linear-icon-cog"></span>
             </div>-->
             <div class="about__do-description">
-              Разработаем современный сайт
-            </div>
+Разработаем современный сайт
+</div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="about__wrap-img">
@@ -367,8 +392,8 @@
               <span class="icon linear-icon-magnifier"></span>
             </div>-->
             <div class="about__do-description">
-              Найдем новых клиентов на рынке
-            </div>
+Найдем новых клиентов на рынке
+</div>
           </div>
           <div class="col-lg-3 col-md-6">
             <!--<div class="about__icon">
@@ -378,8 +403,8 @@
               <img src="dist/images/about-seo-new.svg" alt="">
             </div>
             <div class="about__do-description">
-              Улучшим позиции в выдаче поисковых систем
-            </div>
+Улучшим позиции в выдаче поисковых систем
+</div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="about__wrap-img">
@@ -389,8 +414,8 @@
               <span class="icon linear-icon-diamond2"></span>
             </div>-->
             <div class="about__do-description">
-              Создадим имидж надежной компании
-            </div>
+Создадим имидж надежной компании
+</div>
           </div>
         </div>
       </div>
@@ -1116,8 +1141,8 @@
     </div>
   </footer>
 </div>
-<script src="dist/js/lib.js?v=7"></script>
-<script src="dist/js/main.js?v=7"></script>
+<script src="dist/js/lib.js?v=12"></script>
+<script src="dist/js/main.js?v=12"></script>
 <script>
   (function(i,s,o,g,r,a,m){
     i['GoogleAnalyticsObject']=r;
