@@ -16,6 +16,25 @@
     pointer-events: none;
     z-index: 2;
   }
+  &__element-line {
+    max-width: 270px;
+    position: relative;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #2ADFC3 50%, transparent 100%);
+  //linear-gradient(to right,rgba(255,255,255,0) 0%,#d9d9d9 50%,transparent 100%)
+    margin: 30px auto;
+    /*&:before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 70px;
+      background: $color-secondary;
+      bottom:-3px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+    }*/
+  }
   &__heading {
     font-family: $fontTwoBold;
     font-size: 6.2rem;
@@ -73,7 +92,7 @@
 
   }
   &__do {
-    margin-top: 28px;
+    margin-top: 50px;
   }
   &__do-description {
     text-align: center;

@@ -39,9 +39,29 @@
     background: $color-white;
     padding: 60px 60px 30px 60px;
     border-radius: 20px;
-    box-shadow: 0px 0px 100px 0px rgba(85, 128, 255, 0.1);
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
     @media only screen and (max-width : 480px) {
       padding: 60px 30px 30px 30px;
+    }
+  }
+  &__info {
+    background: $color-bg;
+    height: 100%;
+    width: 100%;
+    margin-top: -15px;
+    position: relative;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 0 20px 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -200px;
+      width: 200px;
+      height: 100%;
+      background: $color-bg;
+      //box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+      z-index: 10;
     }
   }
   &__d-element-1 {

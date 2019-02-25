@@ -60,7 +60,7 @@ gulp.task('sprite', function () {
 //tasks
 gulp.task('sass', function () {
   return gulp.src(path.sass.entry)
-    //.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({

@@ -1,0 +1,111 @@
+.breadcrumbs {
+  position: relative;
+  padding: 120px 0 240px 0;
+  @media only screen and (max-width : 768px) {
+    padding: 60px 0 120px 0;
+  }
+
+&__heading {
+  font-family: $fontTwoBold;
+  color: $color-heading;
+  margin: 30px 0 0 0;
+  font-size: 4.5rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 3.2rem;
+  }
+}
+&__img {
+  text-align: center;
+  animation: 2s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite animateUpDown;
+  & img {
+    height: 370px;
+    @media only screen and (max-width : 480px) {
+      height: auto;
+    }
+  }
+}
+&__svg {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+  & svg {
+    width: 100%;
+    display: block;
+    fill: $color-white
+  }
+}
+& .container {
+  position: relative;
+  z-index: 2;
+}
+& nav {
+  background-image: linear-gradient(to right, rgba(#2ACAFF, .9), rgba(#2ADFC3, .9));
+  padding: 0 30px;
+  border-radius: 60px;
+  margin: 30px 0;
+  display: inline-block;
+  box-shadow: 8px 10px 20px rgba(0,0,0,.1);
+}
+&__path {
+  padding: 10px 0 13px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  color: rgba($color-white, .7);
+  font-size: 2rem;
+  & a {
+    color: $color-white;
+    transition: all .3s;
+    &:hover {
+      color: rgba($color-white, .7);
+    }
+    &:active {
+      color: $color-secondary;
+    }
+    &:focus {
+      color: $color-secondary;
+    }
+  }
+  & > * {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  & li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    & a:hover {
+      color: rgba($color-white, .7);
+    }
+  }
+  & li::after {
+    color: $color-white;
+  }
+  & li::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: -12px;
+    font-size: 19px;
+    line-height: 1;
+    font-style: normal;
+    font-family: "Material Design Icons";
+    transform: translate3d(0, -50%, 0);
+  }
+  & li:last-child:after {
+    display: none;
+  }
+}
+}
+
+@keyframes animateUpDown {
+0% {
+  transform: translateY(0px);
+}
+50% {
+  transform: translateY(-15px);
+}
+100% {
+  transform: translateY(0px);
+}
+}

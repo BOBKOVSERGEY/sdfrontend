@@ -1,0 +1,17 @@
+.content {
+  position: relative;
+  padding: 60px 0 120px 0;
+  background-color: $color-white;
+  z-index: 1;
+  &__svg {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    z-index: 2;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg;
+    }
+  }
+}
