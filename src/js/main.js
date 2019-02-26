@@ -38,6 +38,7 @@ if (document.querySelector('#loader-wrapper')) {
       slick: $(".slick-slider"),
       inputMask: $(".form__phone"),
       formSlider: $(".form-slider"),
+      customWaypoints: $('[data-custom-scroll-to]'),
     };
 
   $window.on('load', function () {
@@ -52,6 +53,25 @@ if (document.querySelector('#loader-wrapper')) {
 
   $(function () {
     isNoviBuilder = window.xMode;
+
+    /**
+     * Custom Waypoints
+     */
+    if (plugins.customWaypoints.length) {
+      var i;
+      for (i = 0; i < plugins.customWaypoints.length; i++) {
+        var $this = $(plugins.customWaypoints[i]);
+
+        $this.on('click', function (e) {
+          e.preventDefault();
+          $("body, html").stop().animate({
+            scrollTop: $("#" + $(this).attr('data-custom-scroll-to')).offset().top
+          }, 1000, function () {
+            $(window).trigger("resize");
+          });
+        });
+      }
+    }
 
     /*input mask*/
     if (plugins.inputMask.length) {
@@ -2002,4 +2022,52 @@ if (document.querySelector('#loader-wrapper')) {
   });
 
   /*******end inputfile******/
+
+
+  /*------------------------
+	Cookie
+	--------------------------*/
+  $(window).load(function() {
+    var user = getCookie("esdi");
+    if (user == "") {
+      $('#cookie_div').css("display", "inherit");
+    }
+    $('#cookie').on('click', function(e) {
+      e.preventDefault();
+      checkCookie();
+    });
+  });
+
+  function setCookie(cname, cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    // document.cookie = cname + "=" + cvalue + "," + expires + ", path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/";
+    $('#cookie_div').css("display", "none");
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      var cookie_ = c.trim().split('=') || [];
+      if (cookie_ != [] && cname == cookie_[0]) {
+        return cookie_[1];
+      }
+    }
+    return "";
+  }
+
+  function checkCookie() {
+    var user = getCookie("esdi");
+    if (user == "") {
+      $('#cookie_div').css("display", "none");
+      setCookie("esdi", "Sitesdevelopment");
+    } else {
+      $('#cookie_div').css("display", "inherit");
+    }
+  }
+
 }());

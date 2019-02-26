@@ -73,10 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
       <td style="padding: 8px; border: 1px solid #ddd;">'. nl2br($comment) . '</td>
     </tr>
   </tbody>
-</table>
-
-</body>
-</html>';
+</table>';
+  $body .= "<p style='font-size: 10px; color: #666;'>";
+  $body .= "IP: " . $_SERVER['REMOTE_ADDR'] . "<br>";
+  $body .= $_SERVER['HTTP_USER_AGENT'] . "<br>";
+  $body .= $_SERVER['HTTP_REFERER'];
+  $body .= "<p>";
 
   //$file = "attachment/" . basename($_FILES['attachment']['name']);
 
