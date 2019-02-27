@@ -13,6 +13,9 @@
   font-family: $fontTwoLight;
   font-size: 2rem;
   @media only screen and (max-width : 768px) {
+    width: 100%;
+  }
+  @media only screen and (max-width : 480px) {
     font-size: 1.5rem;
   }
 }

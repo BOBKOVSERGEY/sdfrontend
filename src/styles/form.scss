@@ -285,6 +285,7 @@
     & a {
       color: $color-secondary;
       transition: all .2s;
+      outline: none;
       &:hover {
         color: $color-white;
       }
@@ -354,6 +355,7 @@
     & a {
       color: $color-secondary;
       transition: all .2s;
+      outline: none;
       &:hover {
         color: $color-heading;
       }

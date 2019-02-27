@@ -39,6 +39,7 @@ if (document.querySelector('#loader-wrapper')) {
       inputMask: $(".form__phone"),
       formSlider: $(".form-slider"),
       customWaypoints: $('[data-custom-scroll-to]'),
+      bootstrapCollapse: $(".card-custom"),
     };
 
   $window.on('load', function () {
@@ -299,6 +300,23 @@ if (document.querySelector('#loader-wrapper')) {
 
       }
     });
+    /**/
+    if (plugins.bootstrapCollapse.length) {
+      for (var i = 0; i < plugins.bootstrapCollapse.length; i++) {
+        var $bootstrapCollapseItem = $(plugins.bootstrapCollapse[i]);
+        (function($bootstrapCollapseItem) {
+          if (!$bootstrapCollapseItem.find("a.collapsed").length) {
+            $bootstrapCollapseItem.addClass("active");
+          }
+          $bootstrapCollapseItem.on("show.bs.collapse", function() {
+            $bootstrapCollapseItem.addClass("active");
+          });
+          $bootstrapCollapseItem.on("hide.bs.collapse", function() {
+            $bootstrapCollapseItem.removeClass("active");
+          });
+        })($bootstrapCollapseItem);
+      }
+    }
 
     /**
      * slick-slider**/
