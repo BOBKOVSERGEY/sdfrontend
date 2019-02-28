@@ -4957,7 +4957,7 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 6rem .5rem;
+  margin: 6rem .5rem 1rem .5rem;
   pointer-events: none;
 }
 
@@ -4983,7 +4983,7 @@ button.close {
 .modal-dialog-scrollable {
   display: -ms-flexbox;
   display: flex;
-  max-height: calc(100% - 12rem);
+  max-height: calc(100% - 7rem);
 }
 
 .modal-dialog-scrollable .modal-content {
@@ -4999,6 +4999,15 @@ button.close {
 
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: $color-bg;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #2ACAFF,#2ADFC3);
+    border-radius: 10px;
+    height: 71px;
+  }
 }
 
 .modal-dialog-centered {
@@ -5006,7 +5015,7 @@ button.close {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  min-height: calc(100% - 12rem);
+  min-height: calc(100% - 7rem);
 }
 
 .modal-dialog-centered::before {
@@ -5126,16 +5135,16 @@ button.close {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
-    margin: 8rem auto;
+    margin: 8rem auto 1rem auto;
   }
   .modal-dialog-scrollable {
-    max-height: calc(100% - 16rem);
+    max-height: calc(100% - 9rem);
   }
   .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem);
   }
   .modal-dialog-centered {
-    min-height: calc(100% - 16rem);
+    min-height: calc(100% - 9rem);
   }
   .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);

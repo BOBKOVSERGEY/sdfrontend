@@ -18,7 +18,7 @@ body {
   }
 }
 
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
 }
@@ -135,6 +135,18 @@ button {
   backface-visibility: hidden;
   transition: .1s opacity ease-in;
   margin-top: 30px;
+}
+.privacy-text {
+  font-size: 2rem;
+  & p {
+    margin-top: 18px;
+  }
+  & ol {
+    margin-top: 18px;
+  }
+  & a {
+    color: $color-secondary;
+  }
 }
 
 @keyframes rotateElementLogo {
