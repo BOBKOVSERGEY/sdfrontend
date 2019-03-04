@@ -1,20 +1,18 @@
 #cookie_div {
+  font-family: $fontTwoMedium;
   background: $color-secondary;
   color: #ffffff;
   position: fixed;
   bottom: 0;
   left: 50%;
-  width: 80%;
+  max-width: 1170px;
+  width: 100%;
   transform: translate(-50%, 0);
   padding: 8px 30px;
   display: none;
   z-index: 999;
   border-radius: 60px;
-  font-family: $fontTwoLight;
-  font-size: 2rem;
-  @media only screen and (max-width : 768px) {
-    width: 100%;
-  }
+  font-size: 1.9rem;
   @media only screen and (max-width : 480px) {
     font-size: 1.5rem;
   }

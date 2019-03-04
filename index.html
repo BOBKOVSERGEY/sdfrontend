@@ -8,7 +8,7 @@
   <title>ЭСДИ - Создание и продвижение сайтов</title>
   <meta name="description" content="Разработка и продвижение сайтов лубой сложности от landing page до крупных интернет магазинов с нестандартным функционалом">
   <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
-  <link rel="stylesheet" href="dist/css/main.css?=17">
+  <link rel="stylesheet" href="dist/css/main.css?=19">
 
   <meta property="og:url" content="http://esdi.ru">
   <meta property="og:site_name" content="Разработка и продвижение сайтов лубой сложности от landing page до крупных интернет магазинов с нестандартным функционалом">
@@ -251,7 +251,7 @@
                         <div class="col-md-9">
                           <div class="form__group">
                             <div class="form__checkbox--center">
-                              <input id="checkbox-promotion" type="checkbox" name="policy" class="form__checkbox js-policy-2" checked><label for="checkbox-promotion">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                              <input id="checkbox-promotion" type="checkbox" name="policy" class="form__checkbox js-policy-2" checked><label for="checkbox-promotion">Подтверждаю свое согласие на <a href="#" data-toggle="modal" data-target="#policyModal">обработку</a> персональных данных</label>
                             </div>
                           </div>
                         </div>
@@ -305,7 +305,7 @@
                         <div class="col-md-9">
                           <div class="form__group">
                             <div class="form__checkbox--center">
-                              <input id="checkbox-reputation" type="checkbox" name="policy" class="form__checkbox js-policy-3" checked><label for="checkbox-reputation">Подтверждаю свое согласие на <a href="#">обработку</a> персональных данных</label>
+                              <input id="checkbox-reputation" type="checkbox" name="policy" class="form__checkbox js-policy-3" checked><label for="checkbox-reputation">Подтверждаю свое согласие на <a href="#" data-toggle="modal" data-target="#policyModal">обработку</a> персональных данных</label>
                             </div>
                           </div>
                         </div>
@@ -549,7 +549,7 @@
       </div>
     </div>
   </section>
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="dist/images/bg-decor-6.png" alt="">
     </div>
     <div class="container">
@@ -558,13 +558,15 @@
       </div>
       <div class="isotope-wrap row">
         <div class="col-sm-12">
-          <ul class="portfolio__list isotope-filters isotope-filters-horizontal">
-            <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">Все</a></li>
-            <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Сайт компании</a></li>
-            <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">Интернет-магазин</a></li>
-            <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#">Промо-сайт</a></li>
-            <li><a data-isotope-filter="Category 4" data-isotope-group="gallery" href="#">Блог</a></li>
-          </ul>
+          <nav class="text-center">
+            <ul class="portfolio__list isotope-filters isotope-filters-horizontal">
+              <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">Все</a></li>
+              <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Сайт компании</a></li>
+              <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">Интернет-магазин</a></li>
+              <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#">Промо-сайт</a></li>
+              <li><a data-isotope-filter="Category 4" data-isotope-group="gallery" href="#">Блог</a></li>
+            </ul>
+          </nav>
           <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
             <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1">
               <a class="img-thumbnail-variant-3" href="https://lawyersoffice.ru/" target="_blank">
@@ -1141,8 +1143,8 @@
       </div>
       <div class="modal-body">
         <div class="privacy-text">
-        <p>г.  Москва</p>
-        <p>Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую компания ЭСДИ (далее – компания),  сайт которой расположен на доменном имени <a href="//esdi.ru">esdi.ru</a>, может получить о Пользователе во время использования сайта, программ и продуктов  компании.</p>
+          <p>г.  Москва</p>
+          <p>Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую компания ЭСДИ (далее – компания),  сайт которой расположен на доменном имени <a href="//esdi.ru">esdi.ru</a>, может получить о Пользователе во время использования сайта, программ и продуктов  компании.</p>
           <ol>
             <li><strong> ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</strong></li>
           </ol>
@@ -1222,12 +1224,13 @@
           <p>7.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.</p>
           <p>7.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать  по адресу <a href="mailto:info@esdi.ru">info@esdi.ru</a>.</p>
           <!--<p>7.4. Действующая Политика конфиденциальности размещена на странице по адресу  https://esdi.ru/company/politikaconf.pdf .</p>-->
+        </div>
       </div>
     </div>
   </div>
 </div>
-<script src="dist/js/lib.js?v=17"></script>
-<script src="dist/js/main.js?v=12"></script>
+<script src="dist/js/lib.js?v=19"></script>
+<script src="dist/js/main.js?v=19"></script>
 <script>
   (function(i,s,o,g,r,a,m){
     i['GoogleAnalyticsObject']=r;
