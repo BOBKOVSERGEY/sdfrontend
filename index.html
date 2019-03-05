@@ -399,6 +399,9 @@
           </div>
         </div>
       </div>
+      <div class="modal-form__popup-btn text-center">
+        <a href="#" data-toggle="modal" data-target="#formModal" class="btn btn--big button-winona">Начать проект</a>
+      </div>
     </div>
   </section>
   <section class="services" data-content="Services">
@@ -1135,6 +1138,8 @@
 <div class="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
+      <div class="modal__bg-close">
+      </div>
       <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -1225,6 +1230,70 @@
           <p>7.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать  по адресу <a href="mailto:info@esdi.ru">info@esdi.ru</a>.</p>
           <!--<p>7.4. Действующая Политика конфиденциальности размещена на странице по адресу  https://esdi.ru/company/politikaconf.pdf .</p>-->
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal__bg-close">
+      </div>
+      <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-header">
+        <h5 class="modal__heading">Начать новый проект</h5>
+      </div>
+      <div class="modal-body">
+        <form action="#" class="form form-contact" method="post" autocomplete="off" enctype="multipart/form-data">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="form__group clk-input">
+                  <input class="form__input form__input--nav" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                  <span class="form__placeholder-modern">Ваше имя</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form__group clk-input">
+                  <input class="form__input form__input--nav" type="email" autocomplete="off" name="email" placeholder="Ваше email">
+                  <span class="form__placeholder-modern">Ваше email</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form__group">
+                  <input class="form__input form__input--nav form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form__group-text-area clk-input">
+                  <textarea name="comment" class="form__textarea form__textarea--nav"></textarea>
+                  <span class="form__placeholder-modern">Комментарий</span>
+                </div>
+                <div class="form__group">
+                  <input type="file" id="file-contact-form-popup" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+                  <label class="upload-file" for="file-contact-form-popup">
+                    <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
+                    <span class="upload-text-reset">Прикрепить файл</span>
+                  </label>
+                </div>
+                <div class="form__group">
+                  <div class="form__checkbox--center">
+                    <input id="checkbox-form-popup" type="checkbox" name="policy" class="form__checkbox--nav js-policy-7" checked>
+                    <label for="checkbox-form-popup">Соглавсие на <a href="#" data-toggle="modal" data-target="#policyModal">обработку</a> персональных данных</label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="form__btn form__btn-7 btn btn--big button-winona" type="submit" name="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
       </div>
     </div>
   </div>

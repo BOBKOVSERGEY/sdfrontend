@@ -9,10 +9,20 @@
     border-bottom: none;
     justify-content: center;
   }
+  &__bg-close {
+    position: absolute;
+    top: -85px;
+    right: -85px;
+    width: 150px;
+    height: 150px;
+    background: $color-primary;
+    z-index: 4;
+    transform: rotate(45deg);
+  }
   &__close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 11px;
+    right: 11px;
     width: 30px;
     height: 30px;
     border-radius: 50%;

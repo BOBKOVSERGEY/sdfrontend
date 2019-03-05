@@ -688,6 +688,9 @@ if (document.querySelector('#loader-wrapper')) {
     $('.js-policy-6').on('click', function(){
       checkPolicy(this, '.form__btn-6');
     });
+    $('.js-policy-7').on('click', function(){
+      checkPolicy(this, '.form__btn-7');
+    });
 
 
 
@@ -2087,5 +2090,16 @@ if (document.querySelector('#loader-wrapper')) {
       $('#cookie_div').css("display", "inherit");
     }
   }
+
+
+  function formInput() {
+    $(".clk-input input, .clk-input textarea").on("keyup", function() {
+      var e = $(this);
+      e.closest("label");
+      e.val().length > 0 ? e.addClass("val-true") : e.removeClass("val-true");
+    });
+  }
+
+  formInput();
 
 }());

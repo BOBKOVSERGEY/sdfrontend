@@ -10,6 +10,39 @@
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+<div class="container">
+  <form action="#" class="new-contact-form">
+    <div class="input-field">
+      <div class="input-wrap">
+
+        <div class="label-wrap clk-input">
+          <input type="text" name="name" placeholder="some">
+          <span>Full Name</span>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <div class="label-wrap clk-input">
+          <input type="email" name="email" class="email-inp">
+          <span>Your E-mail</span>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <label for="subject-1" class="label-wrap clk-input">
+          <input type="text" name="subject" id="subject-1">
+          <span>Subject</span>
+        </label>
+      </div>
+    </div>
+    <div class="input-wrap">
+      <label for="mess-1" class="textarea-wrap clk-input">
+        <textarea name="mess" id="mess-1"></textarea>
+        <span>Message</span>
+      </label>
+    </div>
+    <button type="submit">Send a Request</button>
+  </form>
+
+</div>
 <script src="dist/js/lib.js"></script>
 <script src="dist/js/main.js"></script>
 </body>

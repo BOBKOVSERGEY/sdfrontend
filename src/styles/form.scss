@@ -55,9 +55,37 @@
         transition: all 1s;
       }
     }
+    & .form__placeholder-modern {
+      position: absolute;
+      z-index: 3;
+      left: 16px;
+      top: 50%;
+      padding: 0 5px;
+      background: $color-bg;
+      font-size: 2rem;
+      color: $color-gray;
+      transform: translateY(-50%);
+      transition: all .3s
+    }
+  }
+  &__group-text-area {
+    margin-bottom: 30px;
+    position: relative;
+    & .form__placeholder-modern {
+      position: absolute;
+      z-index: 3;
+      left: 16px;
+      top: 15px;
+      padding: 0 5px;
+      background: $color-white;
+      font-size: 2rem;
+      color: $color-gray;
+      transition: all .3s
+    }
   }
 
   &__input {
+    position: relative;
     font-family: inherit;
     display: block;
     width: 100%;
@@ -70,8 +98,15 @@
     border: 2px solid $color-white;
     border-radius: 35px;
     height: 50px;
-    transition: .3s all ease;
     box-shadow: 8px 10px 20px rgba(0,0,0,.1);
+    z-index: 2;
+    transition: .3s all ease;
+
+    &.val-true + .form__placeholder-modern {
+      background-color: $color-white;
+      top: 0;
+      font-size: 1.5rem;
+    }
 
     &:focus {
       outline: none;
@@ -113,6 +148,12 @@
         border: 2px solid $color-gray-primary;
         background: $color-white;
         box-shadow: 8px 10px 20px rgba(0,0,0,.1);
+        & + .form__placeholder-modern {
+          top: 0;
+          background: $color-white;
+          font-size: 1.5rem;
+
+        }
       }
       &::-webkit-input-placeholder {
         color: $color-gray;
@@ -134,9 +175,25 @@
         }
       }
     }
+
+    /*&--modern {
+      &::-webkit-input-placeholder {
+        opacity: 0;
+      }
+      &::-moz-placeholder {
+        opacity: 0;
+      }
+      &:-ms-input-placeholder {
+        opacity: 0;
+      }
+      &:focus::-webkit-input-placeholder {
+        opacity: 1;
+      }
+    }*/
   }
 
   &__textarea {
+    position: relative;
     font-family: inherit;
     display: block;
     width: 100%;
@@ -149,9 +206,9 @@
     border: 2px solid $color-white;
     border-radius: 35px;
     height: 150px;
-    transition: .3s all ease;
     box-shadow: 8px 10px 20px rgba(0,0,0,.1);
     resize: none;
+    transition: .3s all ease;
     &::-webkit-scrollbar {
       width: 5px;
       background-color: $color-bg;
@@ -167,6 +224,16 @@
       border: 2px solid $color-white;
       background: rgba($color-white, .2);
       box-shadow: 8px 10px 20px rgba($color-white,.1);
+      & + .form__placeholder-modern {
+        top: 0;
+        font-size: 1.5rem;
+        transform: translateY(-50%)
+      }
+    }
+    &.val-true + .form__placeholder-modern {
+      top: 0;
+      font-size: 1.5rem;
+      transform: translateY(-50%)
     }
     &::-webkit-input-placeholder {
       color: $color-white;
@@ -459,6 +526,10 @@
   display: none;
 }
 #checkbox-form-contact {
+  display: none;
+}
+
+#checkbox-form-popup {
   display: none;
 }
 
