@@ -28,6 +28,8 @@
   &__group {
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
+    cursor: text;
     /*&--icon {
       position: relative;
       &:before {
@@ -71,13 +73,15 @@
   &__group-text-area {
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
+    cursor: text;
     & .form__placeholder-modern {
       position: absolute;
       z-index: 3;
       left: 16px;
       top: 15px;
       padding: 0 5px;
-      background: $color-white;
+      background: $color-bg;
       font-size: 2rem;
       color: $color-gray;
       transition: all .3s
@@ -85,7 +89,7 @@
   }
 
   &__input {
-    position: relative;
+    //position: relative;
     font-family: inherit;
     display: block;
     width: 100%;
@@ -193,7 +197,7 @@
   }
 
   &__textarea {
-    position: relative;
+    //position: relative;
     font-family: inherit;
     display: block;
     width: 100%;
@@ -227,13 +231,15 @@
       & + .form__placeholder-modern {
         top: 0;
         font-size: 1.5rem;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
+        background: $color-white;
       }
     }
     &.val-true + .form__placeholder-modern {
+      background: $color-white;
       top: 0;
       font-size: 1.5rem;
-      transform: translateY(-50%)
+      transform: translateY(-50%);
     }
     &::-webkit-input-placeholder {
       color: $color-white;
@@ -568,4 +574,10 @@
   font-size: 20px;
   color: $color-gray;
   margin-right: 10px;
+}
+
+label.error + .form__placeholder-modern {
+  background-color: $color-white;
+  top: 0;
+  font-size: 1.5rem;
 }

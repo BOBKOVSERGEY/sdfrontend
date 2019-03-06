@@ -1246,33 +1246,33 @@
         <h5 class="modal__heading">Начать новый проект</h5>
       </div>
       <div class="modal-body">
-        <form action="#" class="form form-contact" method="post" autocomplete="off" enctype="multipart/form-data">
+        <form action="#" class="form form-popup" method="post" autocomplete="off" enctype="multipart/form-data">
           <div class="container">
             <div class="row">
               <div class="col-lg-4">
-                <div class="form__group clk-input">
-                  <input class="form__input form__input--nav" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
+                <label for="name-1" class="form__group clk-input">
+                  <input class="form__input form__input--nav" id="name-1" type="text" autocomplete="off" name="name">
                   <span class="form__placeholder-modern">Ваше имя</span>
-                </div>
+                </label>
               </div>
               <div class="col-lg-4">
-                <div class="form__group clk-input">
-                  <input class="form__input form__input--nav" type="email" autocomplete="off" name="email" placeholder="Ваше email">
+                <label for="email-1" class="form__group clk-input">
+                  <input class="form__input form__input--nav" type="email" id="email-1" autocomplete="off" name="email">
                   <span class="form__placeholder-modern">Ваше email</span>
-                </div>
+                </label>
               </div>
               <div class="col-lg-4">
-                <div class="form__group">
-                  <input class="form__input form__input--nav form__phone" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
-                </div>
+                <label for="phone-1" class="form__group clk-input">
+                  <input class="form__input form__input--nav form__phone" type="text" id="phone-1" autocomplete="off" name="phone" placeholder="Ваш телефон">
+                </label>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12">
-                <div class="form__group-text-area clk-input">
-                  <textarea name="comment" class="form__textarea form__textarea--nav"></textarea>
+                <label for="comment-1" class="form__group-text-area clk-input">
+                  <textarea name="comment" class="form__textarea form__textarea--nav" id="comment-1"></textarea>
                   <span class="form__placeholder-modern">Комментарий</span>
-                </div>
+                </label>
                 <div class="form__group">
                   <input type="file" id="file-contact-form-popup" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
                   <label class="upload-file" for="file-contact-form-popup">
@@ -1295,6 +1295,8 @@
 
         </form>
       </div>
+    </div>
+    <div class="modal__form-bg">
     </div>
   </div>
 </div>
