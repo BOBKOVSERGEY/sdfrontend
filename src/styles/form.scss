@@ -304,7 +304,16 @@
     font-size: 11px;
     color: #dc0000;
     transition: all 1s;
+
   }
+
+  & label.error + .form__placeholder-modern {
+    background-color: $color-white;
+    top: 0;
+    font-size: 1.5rem;
+  }
+
+
 
 
   &__checkbox + label {
@@ -576,8 +585,4 @@
   margin-right: 10px;
 }
 
-label.error + .form__placeholder-modern {
-  background-color: $color-white;
-  top: 0;
-  font-size: 1.5rem;
-}
+

@@ -141,22 +141,22 @@ if (document.querySelector('#loader-wrapper')) {
 
     /*validate form-popup*/
     $('.form-popup').validate({
-      /*submitHandler: function(form){
+      submitHandler: function(form){
         //var form = document.forms.formContact,
         var formData = new FormData(form),
           xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "/send-main.php");
+        xhr.open("POST", "/send-popup.php");
 
         xhr.onreadystatechange = function() {
           if (xhr.readyState == 4) {
             if(xhr.status == 200) {
 
-              var contactLoader = document.querySelector('.contact-form__loader-wrapper');
+              var contactLoader = document.querySelector('.modal__loader-wrapper');
               contactLoader.style.visibility = 'visible';
               contactLoader.style.opacity = '1';
-              $('.form-contact')[0].reset();
-              $('.upload-text-reset').text('Прикрепить файл');
+              form.reset();
+              $('.upload-text-reset-popup').text('Прикрепить файл');
               setTimeout(function () {
                 contactLoader.style.visibility = 'hidden';
                 contactLoader.style.opacity = '0';
@@ -168,7 +168,7 @@ if (document.querySelector('#loader-wrapper')) {
           }
         };
         xhr.send(formData);
-      },*/
+      },
       rules: {
         name: {
           required: true,
