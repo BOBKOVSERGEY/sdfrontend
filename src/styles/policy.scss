@@ -1,0 +1,66 @@
+.policy {
+  ol {
+    margin: 0;
+    counter-reset: list1;
+    list-style: none;
+    padding: 0 0 0 20px
+  }
+  ol ol {
+    counter-reset: list2;
+    padding: 0 0 0 26px
+  }
+  ol ol li {
+    margin: 0 0 16px
+  }
+  ol ol li::before {
+    counter-increment: list2;
+    content: counter(list1) "." counter(list2) ". "
+  }
+  ol ol ul li {
+    list-style: disc
+  }
+  ol ol ul li::before {
+    content: ''
+  }
+  ol ol ol {
+    counter-reset: list3;
+    padding: 0 0 0 22px
+  }
+  ol ol ol li {
+    margin: 20px 0
+  }
+  ol ol ol li::before {
+    counter-increment: list3;
+    content: counter(list3, lower-latin) ". ";
+    padding: 0 8px 0 0
+  }
+  ol li {
+    position: relative;
+    margin: 0 0 36px
+  }
+  ol li::before {
+    content: counter(list1) ". ";
+    counter-increment: list1;
+    font-weight: 600;
+    position: absolute;
+    right: 100%;
+    padding: 0 6px 0 0
+  }
+  ul li {
+    list-style: disc
+  }
+  ul li::before {
+    content: ''
+  }
+  h2,
+  li {
+    position: relative
+  }
+  h2 {
+    font-size: 2.8rem;
+    color: $color-heading;
+  }
+  &-list_title {
+    margin: 0 0 8px;
+  }
+}
