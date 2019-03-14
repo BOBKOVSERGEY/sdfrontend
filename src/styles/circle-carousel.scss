@@ -215,6 +215,58 @@
   animation: animateHit 5s forwards;
 }
 
+.circle-carousel {
+  & .prev span,
+  & .next span {
+    position: relative;
+    transition: all .3s;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //background: $color-secondary;
+      transition: .2s;
+      animation: pulseBtnCircleCarousel 2s infinite;
+      animation-delay: .33s;
+      z-index: -1;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //background: $color-secondary;
+      transition: .2s;
+      animation: pulseBtnCircleCarousel 2s infinite;
+      animation-delay: 0s;
+      z-index: -1;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@keyframes pulseBtnCircleCarousel {
+  0% {
+    background: rgba($color-tertiary, 0.4);
+    box-shadow: 0 0 0 0 rgba($color-secondary, 0.4); }
+  70% {
+    background: rgba($color-tertiary, 0);
+    box-shadow: 0 0 0 20px rgba($color-secondary, 0); }
+  100% {
+    background: rgba($color-tertiary, 0);
+    box-shadow: 0 0 0 0 rgba($color-secondary, 0); } }
+
 @keyframes animateHit {
   from {
     transform: translate(0, 100%) scale(.3) rotate(-180deg);
