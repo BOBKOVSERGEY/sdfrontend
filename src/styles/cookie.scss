@@ -16,6 +16,9 @@
   @media only screen and (max-width : 480px) {
     font-size: 1.5rem;
   }
+  & a {
+    color: $color-white;
+  }
 }
 #cookie_div .button {
   font-family: $fontTwoMedium;
