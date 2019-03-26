@@ -60,11 +60,11 @@ if (document.querySelector('#loader-wrapper')) {
     if (thanks) {
       $(window).on('scroll', function() {
         var scroll = $(window).scrollTop();
-        //console.log($(document).height());
-        //console.log($(document).height() - $(window).height());
-        //console.log(scroll);
+        console.log($(document).height());
+        console.log($(document).height() - $(window).height());
+        console.log(scroll);
         //$(window).scrollTop() + $('body').height() >= ($(document).height() - 100
-        if (scroll == $(document).height() - $(window).height()) {
+        if (scroll >= $(document).height() - $(window).height() - 5) {
           $('.thanks').addClass('thanks--visible').stop();
           setTimeout(function () {
             $('.thanks').removeClass('thanks--visible').stop();
