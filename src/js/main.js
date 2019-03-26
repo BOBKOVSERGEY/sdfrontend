@@ -55,6 +55,37 @@ if (document.querySelector('#loader-wrapper')) {
   $(function () {
     isNoviBuilder = window.xMode;
 
+    // tanks
+    var thanks = document.querySelector('.thanks');
+    if (thanks) {
+      $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        //console.log($(document).height());
+        //console.log($(document).height() - $(window).height());
+        //console.log(scroll);
+        //$(window).scrollTop() + $('body').height() >= ($(document).height() - 100
+        if (scroll == $(document).height() - $(window).height()) {
+          $('.thanks').addClass('thanks--visible').stop();
+          setTimeout(function () {
+            $('.thanks').removeClass('thanks--visible').stop();
+          }, 5000);
+        } else {
+          $('.thanks').removeClass('thanks--visible').stop();
+        }
+      });
+    }
+
+    /**
+     * year copyright
+     */
+    var now = new Date();
+    var getYear = now.getFullYear();
+    var elCopyrightYear = document.getElementById('year-footer');
+    if (elCopyrightYear) {
+      elCopyrightYear.innerHTML = getYear;
+    }
+
+
     /**
      * Custom Waypoints
      */
