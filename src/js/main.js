@@ -64,7 +64,7 @@ if (document.querySelector('#loader-wrapper')) {
         console.log($(document).height() - $(window).height());
         console.log(scroll);
         //$(window).scrollTop() + $('body').height() >= ($(document).height() - 100
-        if (scroll >= $(document).height() - $(window).height() - 5) {
+        if (scroll >= $(document).height() - $(window).height() - 10) {
           $('.thanks').addClass('thanks--visible').stop();
           setTimeout(function () {
             $('.thanks').removeClass('thanks--visible').stop();

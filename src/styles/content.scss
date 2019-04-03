@@ -20,6 +20,7 @@
     position: absolute;
     bottom: -1px;
     z-index: 2;
+    transform: rotateZ(180deg);
     & svg {
       width: 100%;
       display: block;
