@@ -1,0 +1,43 @@
+.content-new {
+  background-color: $color-white;
+  min-height: 600px;
+  padding: 200px 0;
+  position: relative;
+  z-index: 1;
+  /*&:before {
+    background: url(../images/bg-content-new-top.svg) no-repeat;
+    position: absolute;
+    content: "";
+    height: 212px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1
+  }*/
+  &__bottom-svg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg
+    }
+  }
+  &__top-svg {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg
+    }
+  }
+}

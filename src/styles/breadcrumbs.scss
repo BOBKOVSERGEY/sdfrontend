@@ -70,68 +70,80 @@
   position: relative;
   z-index: 2;
 }
-& nav {
-  /*background-image: linear-gradient(to right, rgba($color-secondary, .9) 10%, rgba($color-primary, .9));
-  padding: 0 30px;
-  border-radius: 60px;
-  margin: 30px 0;
-  display: inline-block;
-  box-shadow: 8px 10px 20px rgba(0,0,0,.1);*/
-  background-color: $color-white;
-  box-shadow: 8px 10px 20px rgba(0,0,0,.1);
-  padding: 0 30px;
-  border-radius: 60px;
-  display: inline-block;
-  margin: 30px 0;
-}
-&__path {
-  padding: 10px 0 13px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  color: rgba($color-heading, .7);
-  font-size: 2.4rem;
-  & a {
-    color: $color-heading;
-    transition: all .3s;
-    &:hover {
-      color: rgba($color-white, .7);
-    }
-    &:active {
-      color: $color-secondary;
-    }
-    &:focus {
-      color: $color-secondary;
-    }
-  }
-  & > * {
-    padding-left: 33px;
-    padding-right: 33px;
-  }
-  & li {
-    position: relative;
+
+  & nav {
+    /*background-image: linear-gradient(to right, rgba($color-secondary, .9) 10%, rgba($color-primary, .9));
+    padding: 0 30px;
+    border-radius: 60px;
+    margin: 30px 0;
     display: inline-block;
-    vertical-align: middle;
-    & a:hover {
-      color: rgba($color-heading, .7);
+    box-shadow: 8px 10px 20px rgba(0,0,0,.1);*/
+    background-color: $color-white;
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, .1);
+    padding: 0 30px;
+    border-radius: 60px;
+    display: inline-block;
+    margin: 30px 0;
+  }
+
+  &__path {
+    padding: 10px 0 13px 0;
+    margin-left: -33px;
+    margin-right: -33px;
+    color: rgba($color-heading, .7);
+    font-size: 2.4rem;
+
+    & a {
+      color: $color-heading;
+      transition: all .3s;
+
+      &:hover {
+        color: rgba($color-white, .7);
+      }
+
+      &:active {
+        color: $color-secondary;
+      }
+
+      &:focus {
+        color: $color-secondary;
+      }
     }
-  }
-  & li::after {
-    color: $color-heading;
-  }
-  & li::after {
-    content: "";
-    position: absolute;
-    top: 55%;
-    right: -12px;
-    font-size: 19px;
-    line-height: 1;
-    font-style: normal;
-    font-family: "Material Design Icons";
-    transform: translate3d(0, -50%, 0);
-  }
-  & li:last-child:after {
-    display: none;
-  }
+
+    & > * {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+
+    & li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+
+      & a:hover {
+        color: rgba($color-heading, .7);
+      }
+    }
+
+    & li::after {
+      color: $color-heading;
+    }
+
+    & li::after {
+      content: "";
+      position: absolute;
+      top: 55%;
+      right: -12px;
+      font-size: 19px;
+      line-height: 1;
+      font-style: normal;
+      font-family: "Material Design Icons";
+      transform: translate3d(0, -50%, 0);
+    }
+
+    & li:last-child:after {
+      display: none;
+    }
 }
 }
 

@@ -1,0 +1,47 @@
+.breadcrumbs-new {
+  position: relative;
+  padding: 120px 0;
+  &__banner {
+    & img {
+      position: absolute;
+      z-index: -1;
+      height: 800px;
+    }
+    &-1, &-2 {
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+    &-1 {
+      top: -190px;
+      right: -45px;
+      animation-name: breadcrumb_shape_1;
+
+    }
+    &-2 {
+      top: -190px;
+      right: -80px;
+      animation-name: breadcrumb_shape_2;
+    }
+    @media only screen and (max-width : 991px) {
+      display: none;
+    }
+  }
+
+
+}
+
+@keyframes breadcrumb_shape_1 {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(15px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes breadcrumb_shape_2 {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-15px); }
+  100% {
+    transform: translateX(0); } }
