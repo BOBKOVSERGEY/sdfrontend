@@ -1,8 +1,8 @@
 .breadcrumbs {
   position: relative;
-  padding: 120px 0 240px 0;
-  @media only screen and (max-width : 768px) {
-    padding: 60px 0 120px 0;
+  padding: 120px 0;
+  @media only screen and (max-width : 991px) {
+    padding: 60px 0;
   }
 
 &__heading {

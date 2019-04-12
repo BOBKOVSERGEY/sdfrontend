@@ -1,9 +1,12 @@
 .content-new {
   background-color: $color-white;
-  min-height: 600px;
+  //min-height: 600px;
   padding: 200px 0;
   position: relative;
   z-index: 1;
+  @media only screen and (max-width : 991px) {
+    padding: 120px 0;
+  }
   /*&:before {
     background: url(../images/bg-content-new-top.svg) no-repeat;
     position: absolute;
