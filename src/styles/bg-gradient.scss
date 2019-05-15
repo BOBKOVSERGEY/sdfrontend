@@ -1,0 +1,11 @@
+.bg-gradient {
+  &__one {
+    background-image: linear-gradient(90deg, #9795f0 0%, #fbc8d4 100%);
+  }
+  &__two {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  }
+  &__three {
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+}
