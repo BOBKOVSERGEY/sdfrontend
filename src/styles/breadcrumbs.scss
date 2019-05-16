@@ -4,6 +4,22 @@
   @media only screen and (max-width : 991px) {
     padding: 60px 0;
   }
+&--bg-white {
+  background-color: $color-white;
+}
+  &__bottom-svg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg
+    }
+  }
 
 &__heading {
   position: relative;

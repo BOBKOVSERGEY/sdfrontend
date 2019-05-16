@@ -2,6 +2,9 @@
   position: relative;
   padding: 120px 0;
   z-index: 1;
+  &--small-page {
+    padding: 200px 0 120px 0;
+  }
 
   &__heading {
     font-family: $fontTwoBold;
@@ -220,5 +223,18 @@
   }
   &__loader-text {
     margin-top: 20px;
+  }
+  &__top-svg {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-white
+    }
   }
 }
