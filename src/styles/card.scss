@@ -1,0 +1,104 @@
+.card {
+  margin-bottom: 0;
+  box-shadow: none;
+  border: none;
+  border-radius: 0
+}
+
+.card-custom {
+  padding: 22px 15px 20px;
+  background-color: rgba(255, 255, 255, .8)
+}
+
+@media (min-width: 768px) {
+  .card-custom {
+    padding: 55px 20px
+  }
+}
+
+.card-custom + .card-custom {
+  border-top: 1px solid #ececee;
+  margin-top: 0
+}
+
+.card-custom .card-custom-title > a {
+  display: block;
+  position: relative;
+  padding-right: 40px;
+  color: #41516a;
+  background: 0 0;
+  transition: .3s all ease
+}
+
+.card-custom .card-custom-title > a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font: 400 24px/24px "Linearicons";
+  color: #80deea;
+  transform: translateY(-50%) rotate(0deg);
+  transition: .35s all ease-in-out
+}
+
+.card-custom .card-custom-title > a span {
+  padding-left: 8px;
+  color: #888;
+  font-size: 14px
+}
+
+.card-custom .card-custom-title > a.collapsed {
+  background: 0 0
+}
+
+.card-custom .card-custom-title > a.collapsed:before {
+  content: '\e936';
+  transform: translateY(-50%) rotate(180deg)
+}
+
+.card-custom .card-custom-title > a:hover {
+  text-decoration: none;
+  background: 0 0
+}
+
+.card-custom .card-custom-collapse {
+  background: 0 0
+}
+
+.card-custom .card-custom-collapse .card-custom-body {
+  padding: 15px 25px 30px 0
+}
+
+@media (min-width: 768px) {
+  .card-custom .card-custom-collapse .card-custom-body {
+    padding: 30px 30px 22px 0
+  }
+}
+
+h3 + .card-custom-group-wrap {
+  margin-top: 30px
+}
+
+.card-classic .card-custom-title > a {
+  padding-left: 35px;
+  padding-right: 0
+}
+
+.card-classic .card-custom-title > a:before {
+  content: "\e93c";
+  top: 47%;
+  left: 0;
+  right: auto;
+  transform: translateY(-50%) rotate(90deg);
+  transition: .35s all ease-in-out
+}
+
+.card-classic .card-custom-title > a.collapsed:before {
+  content: '\e93c';
+  transform: translateY(-50%) rotate(0deg)
+}
+
+.card-classic .card-custom-title > a:hover {
+  text-decoration: none;
+  background: 0 0
+}
