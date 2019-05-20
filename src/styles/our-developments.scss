@@ -1,0 +1,119 @@
+.our-developments {
+  background-color: $color-bg;
+  //min-height: 600px;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+  &__heading {
+    font-family: $fontTwoBold;
+    font-size: 6.2rem;
+    color: $color-heading;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 50px;
+    @media only screen and (max-width : 768px) {
+      font-size: 3.2rem;
+    }
+    &:before {
+      top: 0;
+      width: 70px;
+      height: 20px;
+      content: "";
+      position: absolute;
+      background-color: $color-primary;
+      border-radius: 10px;
+      z-index: -1;
+      @media only screen and (max-width : 768px) {
+        width: 50px;
+        height: 15px;
+        top: -3px;
+      }
+    }
+    &:after {
+      bottom: -5px;
+      width: 70px;
+      left: 0;
+      height: 20px;
+      content: '';
+      position: absolute;
+      background-color: $color-secondary;
+      border-radius: 10px;
+      z-index: -1;
+      transform: rotate(-5deg);
+      @media only screen and (max-width : 768px) {
+        width: 50px;
+        height: 15px;
+        top: 29px;
+      }
+    }
+  }
+  & .card-custom-title {
+    margin: 0;
+    &:hover .our-developments__icon i:after {
+      transform: translateX(0);
+    }
+  }
+  & .card-custom {
+    background-color: $color-bg;
+    transition: .15s ease;
+    box-shadow: 0 0 12px 0 rgba(75,81,91,.12);
+    &:hover {
+      box-shadow: 0 0 24px 0 rgba(75,81,91,.12);
+      background: #fff;
+      border-color: #ffffff;
+    }
+  }
+  & .card-custom.active{
+    box-shadow: 0 0 24px 0 rgba(75, 81, 91, 0.12);
+    background: #ffffff;
+    border-color: #ffffff;
+    transition: .15s ease;
+  }
+  & .card-custom .card-custom-title a {
+    //font-family: $fontTwoMedium;
+    padding: 35px 80px 35px 0;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    //text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+
+  & .card-custom.active .card-custom-title a {
+    color: $color-dark;
+  }
+  &__icon {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    background-color: #3111ff;
+    color: rgba(255,255,255,.77);
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 14px;
+    flex: 0 0 auto;
+    z-index: 1;
+    overflow: hidden;
+    & i:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      top: -1px;
+      bottom: -1px;
+      transition: .3s;
+      z-index: -1;
+      transform: translateX(-100%);
+      border-radius: 50%;
+      background: $color-secondary;
+    }
+  }
+  & .card-custom.active &__icon {
+    background-color: $color-secondary;
+  }
+
+
+}
