@@ -629,7 +629,7 @@ tabs-features {
 }
 
 .card-classic.active .card-link {
-  color: #3061ff
+  color: $color-dark;
 }
 
 .card-classic .card-title a, .card-classic .card-body {
@@ -640,12 +640,10 @@ tabs-features {
   position: relative;
   z-index: 1;
   padding: 25px 60px 25px 25px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
   font-size: 17px;
   line-height: 1.4;
   letter-spacing: .015em;
-  color: #262f3c;
+  color: $color-heading;
   background-color: transparent;
   transition: .33s
 }
@@ -690,7 +688,7 @@ tabs-features {
   font-family: material design icons;
   font-size: 22px;
   transition: .15s;
-  color: #3061ff
+  color: #F8006B;
 }
 
 .card-classic .card-arrow::before {
