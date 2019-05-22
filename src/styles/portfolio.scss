@@ -16,6 +16,36 @@
     pointer-events: none;
     z-index: 2;
   }
+  &--dev {
+    background-color: $color-white;
+    padding: 200px 0;
+  }
+  &__bottom-svg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg
+    }
+  }
+  &__top-svg {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: $color-bg
+    }
+  }
   &__list {
     font-family: $fontTwoBook;
     text-align: center;
