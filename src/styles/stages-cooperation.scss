@@ -62,10 +62,6 @@
   margin: 30px auto;
   position: relative;
   padding: 0 10px;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 #timeline p{
   margin-top: 20px;
@@ -74,7 +70,7 @@
   content: "";
   width: 3px;
   height: 100%;
-  background: $color-secondary;
+  background: $color-primary;
   left: 50%;
   top: 0;
   position: absolute;
@@ -89,6 +85,7 @@
 #timeline .timeline-item {
   margin-bottom: 50px;
   position: relative;
+
 }
 #timeline .timeline-item .timeline-icon {
   background: $color-primary;
@@ -104,25 +101,39 @@
   overflow: hidden;
   margin-left: -28px;
   border-radius: 50%;
+  z-index: 1;
+  & i:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    transition: .3s;
+    z-index: -1;
+    transform: translateX(-100%);
+    border-radius: 50%;
+    background: $color-secondary;
+  }
 }
-#timeline .timeline-item .timeline-icon i {
-  position: relative;
-}
+
 #timeline .timeline-item .timeline-content {
   width: 45%;
-  background-color: #f8f8f8;
+  background-color: #fff;
   box-shadow: 0 0 12px 0 rgba(75,81,91,.12);
   padding: 20px;
   border-radius: 10px;
-  transition: all 0.3s ease;
+
 }
 #timeline .timeline-item .timeline-content h3 {
   padding: 15px;
-  background: $color-secondary;
-  color: #fff;
+  background: $color-white;
+  color: $color-heading;
   font-size: 2.4rem;
   margin: -20px -20px 0 -20px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
+
 }
 #timeline .timeline-item .timeline-content:before {
   content: '';
@@ -133,7 +144,8 @@
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid $color-secondary;
+  border-left: 7px solid $color-white;
+
 }
 #timeline .timeline-item .timeline-content.right {
   float: right;
@@ -143,7 +155,7 @@
   right: 45%;
   left: inherit;
   border-left: 0;
-  border-right: 7px solid $color-secondary;
+  border-right: 7px solid $color-white;
 }
 
 @media only screen and (max-width : 768px) {
@@ -168,7 +180,7 @@
     left: 10%;
     margin-left: -6px;
     border-left: 0;
-    border-right: 7px solid $color-secondary
+    border-right: 7px solid $color-white;
   }
   #timeline .timeline-item .timeline-icon {
     left: 0;
