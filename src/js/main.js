@@ -3,7 +3,7 @@
 if (document.querySelector('#loader-wrapper')) {
   setTimeout(function () {
     document.querySelector('body').classList.add('loaded');
-  }, 1100);
+  }, 100);
 }
 
 (function () {
