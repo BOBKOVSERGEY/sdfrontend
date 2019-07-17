@@ -233,14 +233,39 @@ if (document.querySelector('#loader-wrapper')) {
         //var form = document.forms.formContact,
         var formData = new FormData($('.form-nav')[0]),
           xhr = new XMLHttpRequest();
-        xhr.open("POST", "/send-nav.php");
-        xhr.onreadystatechange = function() {
+        xhr.open("POST", "/send-nav.php", true);
+
+        var contactLoader = document.querySelector('.form-nav__loader-wrapper');
+        contactLoader.style.visibility = 'visible';
+        contactLoader.style.opacity = '1';
+
+        xhr.onprogress = function () {
+
+        };
+
+        // ready state 4
+        xhr.onload = function () {
+          if (this.status === 200) {
+            contactLoader.style.visibility = 'hidden';
+            contactLoader.style.opacity = '0';
+            $('.form-nav')[0].reset();
+
+          } else if (this.status === 404) {
+            //document.getElementById('error').innerHTML = 'Not Found';
+            console.log('Some error');
+          }
+        }
+
+        xhr.onerror = function() {
+          console.log('Some error');
+        };
+        /*xhr.onreadystatechange = function() {
           if (xhr.readyState == 4) {
             if(xhr.status == 200) {
               var contactLoader = document.querySelector('.form-nav__loader-wrapper');
               contactLoader.style.visibility = 'visible';
               contactLoader.style.opacity = '1';
-              $('.form-nav')[0].reset();
+
               setTimeout(function () {
                 contactLoader.style.visibility = 'hidden';
                 contactLoader.style.opacity = '0';
@@ -249,7 +274,7 @@ if (document.querySelector('#loader-wrapper')) {
               //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
             }
           }
-        };
+        };*/
         xhr.send(formData);
       },
       rules: {

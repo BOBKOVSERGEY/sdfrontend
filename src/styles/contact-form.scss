@@ -85,7 +85,8 @@
     left: -100px;
     width: 130px;
     height: 30px;
-    background: $color-bg;
+    //background: $color-bg;
+    background-image: linear-gradient(to left, rgba($color-bg,1)  0%, $color-bg 50%, transparent 100%);
     border-radius:  0 35px 35px 0;
     @media only screen and (max-width : 768px) {
       display: none;
@@ -109,7 +110,8 @@
     left: -70px;
     width: 130px;
     height: 50px;
-    background: $color-bg;
+    //background: $color-bg;
+    background-image: linear-gradient(to left, rgba($color-bg,1)  0%, $color-bg 50%, transparent 100%);
     border-radius:  0 35px 35px 0;
     @media only screen and (max-width : 768px) {
       display: none;
@@ -121,7 +123,8 @@
     right: -70px;
     width: 130px;
     height: 50px;
-    background: $color-bg;
+    //background: $color-bg;
+    background-image: linear-gradient(to right, rgba($color-bg,1)  0%, $color-bg 50%, transparent 100%);
     border-radius:  35px 0 0 35px;
     @media only screen and (max-width : 768px) {
       display: none;
@@ -145,7 +148,8 @@
     right: -100px;
     width: 130px;
     height: 30px;
-    background: $color-bg;
+    background-image: linear-gradient(to right, rgba($color-bg,1)  0%, $color-bg 50%, transparent 100%);
+    //background: $color-bg;
     border-radius:  35px 0 0 35px;
     @media only screen and (max-width : 768px) {
       display: none;
