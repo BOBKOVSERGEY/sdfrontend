@@ -525,6 +525,71 @@
     text-align: center;
   }
 }
+
+.slider-form {
+
+  &__loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-primary;
+
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: $color-secondary;
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: $color-tertiary;
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+  }
+  &__loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: rgba($color-white, .99);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  &__loader-text {
+    margin-top: 20px;
+    text-align: center;
+    color: $color-white;
+  }
+}
+
 #checkbox-development {
   display: none;
 }

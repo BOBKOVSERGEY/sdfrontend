@@ -120,9 +120,41 @@ if (document.querySelector('#loader-wrapper')) {
         var formData = new FormData($('.form-contact')[0]),
           xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "/send-main.php");
+        xhr.open("POST", "/send-main.php", true);
 
-        xhr.onreadystatechange = function() {
+        var contactLoaderText = document.querySelector('.contact-form__loader-text');
+        contactLoaderText.textContent = 'Заявка отправляется...';
+        var contactLoader = document.querySelector('.contact-form__loader-wrapper');
+        contactLoader.style.visibility = 'visible';
+        contactLoader.style.opacity = '1';
+
+
+        xhr.onprogress = function () {
+
+        };
+
+        // ready state 4
+        xhr.onload = function () {
+          if (this.status === 200) {
+            contactLoaderText.textContent = 'Заявка успешно отправлена. Мы свяжемся с Вами в ближайшее время';
+            setTimeout(function () {
+              contactLoader.style.visibility = 'hidden';
+              contactLoader.style.opacity = '0';
+              form.reset();
+              $('.upload-text-reset').text('Прикрепить файл');
+            }, 3000);
+
+          } else if (this.status === 404) {
+            //document.getElementById('error').innerHTML = 'Not Found';
+            console.log('Some error');
+          }
+        }
+
+        xhr.onerror = function() {
+          console.log('Some error');
+        };
+
+        /*xhr.onreadystatechange = function() {
           if (xhr.readyState == 4) {
             if(xhr.status == 200) {
 
@@ -140,7 +172,7 @@ if (document.querySelector('#loader-wrapper')) {
               //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
             }
           }
-        };
+        };*/
         xhr.send(formData);
       },
       rules: {
@@ -177,9 +209,41 @@ if (document.querySelector('#loader-wrapper')) {
         var formData = new FormData(form),
           xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "/send-popup.php");
+        xhr.open("POST", "/send-popup.php", true);
 
-        xhr.onreadystatechange = function() {
+        var contactLoaderText = document.querySelector('.modal__loader-text');
+        contactLoaderText.textContent = 'Заявка отправляется...';
+        var contactLoader = document.querySelector('.modal__loader-wrapper');
+        contactLoader.style.visibility = 'visible';
+        contactLoader.style.opacity = '1';
+
+
+        xhr.onprogress = function () {
+
+        };
+
+        // ready state 4
+        xhr.onload = function () {
+          if (this.status === 200) {
+            contactLoaderText.textContent = 'Заявка успешно отправлена. Мы свяжемся с Вами в ближайшее время';
+            setTimeout(function () {
+              contactLoader.style.visibility = 'hidden';
+              contactLoader.style.opacity = '0';
+              form.reset();
+              $('.upload-text-reset-popup').text('Прикрепить файл');
+            }, 3000);
+
+          } else if (this.status === 404) {
+            //document.getElementById('error').innerHTML = 'Not Found';
+            console.log('Some error');
+          }
+        }
+
+        xhr.onerror = function() {
+          console.log('Some error');
+        };
+
+        /*xhr.onreadystatechange = function() {
           if (xhr.readyState == 4) {
             if(xhr.status == 200) {
 
@@ -197,7 +261,7 @@ if (document.querySelector('#loader-wrapper')) {
               //$(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
             }
           }
-        };
+        };*/
         xhr.send(formData);
       },
       rules: {
@@ -234,7 +298,8 @@ if (document.querySelector('#loader-wrapper')) {
         var formData = new FormData($('.form-nav')[0]),
           xhr = new XMLHttpRequest();
         xhr.open("POST", "/send-nav.php", true);
-
+        var contactLoaderText = document.querySelector('.form-nav__loader-text');
+        contactLoaderText.textContent = 'Заявка отправляется...';
         var contactLoader = document.querySelector('.form-nav__loader-wrapper');
         contactLoader.style.visibility = 'visible';
         contactLoader.style.opacity = '1';
@@ -246,9 +311,12 @@ if (document.querySelector('#loader-wrapper')) {
         // ready state 4
         xhr.onload = function () {
           if (this.status === 200) {
-            contactLoader.style.visibility = 'hidden';
-            contactLoader.style.opacity = '0';
-            $('.form-nav')[0].reset();
+            contactLoaderText.textContent = 'Заявка успешно отправлена. Мы свяжемся с Вами в ближайшее время';
+            setTimeout(function () {
+              contactLoader.style.visibility = 'hidden';
+              contactLoader.style.opacity = '0';
+              $('.form-nav')[0].reset();
+            }, 3000);
 
           } else if (this.status === 404) {
             //document.getElementById('error').innerHTML = 'Not Found';
@@ -313,6 +381,9 @@ if (document.querySelector('#loader-wrapper')) {
             var formData = new FormData(form),
                 xhr = new XMLHttpRequest();
             xhr.open("POST", "/send-slider.php");
+
+
+
             xhr.onreadystatechange = function() {
               if (xhr.readyState == 4) {
                 if(xhr.status == 200) {

@@ -47,10 +47,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
       <td style="padding: 8px; border: 1px solid #ddd;">' . $phone .  '</td>
     </tr>
   </tbody>
-</table>
+</table>';
 
-</body>
-</html>';
+    $body .= "<p style='font-size: 10px; color: #666;'>";
+    $body .= "IP: " . $_SERVER['REMOTE_ADDR'] . "<br>";
+    $body .= $_SERVER['HTTP_USER_AGENT'] . "<br>";
+    $body .= $_SERVER['HTTP_REFERER'];
+    $body .= "<p>";
 
   if (sendMail('sergey_bobkov@inbox.ru', $body)) {
     echo $message = '<div class="alert alert-success">Сообщение успешно отправлено</div>';
