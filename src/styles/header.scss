@@ -27,6 +27,7 @@
   &__logo {
     font-family: $fontTwoBold;
     color: $color-white;
+    transform: rotate(-25deg);
     &--phone {
       display: none;
       font-family: $fontTwoBold;
@@ -37,6 +38,8 @@
     height: 43px;
     margin-right: .6rem;
     flex: 1 1 auto;
+    transform: rotate(
+                    -25deg);
     //animation: logo 5s forwards;
   }
 }

@@ -16,6 +16,8 @@ if (document.querySelector('#loader-wrapper')) {
     $html = $("html"),
     $body = $("body"),
 
+    
+    
     isDesktop = $html.hasClass("desktop"),
     isIE = userAgent.indexOf("msie") !== -1 ? parseInt(userAgent.split("msie")[1], 10) : userAgent.indexOf("trident") !== -1 ? 11 : userAgent.indexOf("edge") !== -1 ? 12 : false,
     isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),

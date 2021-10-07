@@ -101,11 +101,14 @@
   align-items: center;
 }
 
-.circle-carousel .content-title h4 a {
+.circle-carousel .content-title h4 {
   font-family: $fontTwoBold;
   letter-spacing: 1px;
   font-size: 3.2rem;
   color: #fff;
+  & a {
+    color: #fff;
+  }
 }
 
 .circle-carousel .pagination {
