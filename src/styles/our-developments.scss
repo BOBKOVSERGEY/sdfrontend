@@ -1,9 +1,24 @@
 .our-developments {
   background-color: $color-bg;
   //min-height: 600px;
-  padding: 120px 0;
+  padding: 120px 0 200px 0;
   position: relative;
   z-index: 0;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 270px;
+    font-family: $fontTwoBold;
+    line-height: .668;
+    color: inherit;
+    opacity: .03;
+    pointer-events: none;
+    z-index: 2;
+  }
   &__heading {
     font-family: $fontTwoBold;
     font-size: 6.2rem;

@@ -1,6 +1,19 @@
 .slider {
   position: relative;
   overflow: hidden;
+  &__action {
+    color: white;
+    font-family: $fontTwoMedium;
+    margin-bottom: 30px;
+    & a {
+      display: inline-block;
+      color: white;
+      transform: rotate(-5deg);
+      &:nth-child(2) {
+        transform: rotate(5deg);
+      }
+    }
+  }
   /*&:before {
     content: '';
     position: absolute;

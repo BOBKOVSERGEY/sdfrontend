@@ -3,7 +3,7 @@
 if (document.querySelector('#loader-wrapper')) {
   setTimeout(function () {
     document.querySelector('body').classList.add('loaded');
-  }, 100);
+  }, 50);
 }
 
 (function () {
@@ -2287,5 +2287,12 @@ if (document.querySelector('#loader-wrapper')) {
   }
 
   formInput();
+  
+  /*bx-panel*/
+  const bxPanel = document.querySelector('body #bx-panel');
+  const header = document.querySelector('.rd-navbar');
+  if(bxPanel) {
+    header.style.top = '40' + 'px';
+  }
 
 }());

@@ -59,6 +59,9 @@
       z-index: -1;
       transform: rotate(-5deg);
     }
+    @media only screen and (max-width : 768px) {
+      font-size: 4.2rem;
+    }
   }
   &__wrap-img {
     margin: 0 15px 0px 15px;
@@ -90,6 +93,18 @@
   }
   &__do {
     margin-top: 50px;
+    &-heading {
+      font-family: $fontTwoMedium;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+      color: #41516a;
+      text-align: center;
+    }
+    &-adv-descr {
+      font-family: $fontTwoLight;
+      margin-bottom: 30px!important;
+      font-size: 2rem;
+    }
   }
   &__do-item {
     padding: 25px 20px 5px 20px;

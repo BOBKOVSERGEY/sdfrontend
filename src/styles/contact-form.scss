@@ -35,6 +35,9 @@
       z-index: -1;
       transform: rotate(-5deg);
     }
+    @media only screen and (max-width : 768px) {
+      font-size: 4.2rem;
+    }
   }
   &__wrapper {
     position: relative;

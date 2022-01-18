@@ -4,6 +4,21 @@
   @media only screen and (max-width : 991px) {
     padding: 60px 0;
   }
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    //transform: translate(-50%, 0);
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 270px;
+    font-family: $fontTwoBold;
+    line-height: .668;
+    color: inherit;
+    opacity: .03;
+    pointer-events: none;
+    z-index: 2;
+  }
   &__banner {
     & img {
       position: absolute;
